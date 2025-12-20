@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Setting up a Zipline Server</title>
-    <meta name="title" content="Setting up a Zipline Server">
-    <meta name="description" content="Zipline is a high-performance ShareX/file-upload server used to share screenshots and store files online.">
+    <title>Getting Started - VPS</title>
+    <meta name="title" content="Getting Started - VPS">
+    <meta name="description" content="Work in progress.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.danbot.host/guides/zipline/">
+    <link rel="canonical" href="https://docs.danbot.host/vps/getting-started/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.danbot.host/guides/zipline/">
-    <meta property="og:title" content="Setting up a Zipline Server">
-    <meta property="og:description" content="Zipline is a high-performance ShareX/file-upload server used to share screenshots and store files online.">
+    <meta property="og:url" content="https://docs.danbot.host/vps/getting-started/">
+    <meta property="og:title" content="Getting Started - VPS">
+    <meta property="og:description" content="Work in progress.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.danbot.host/guides/zipline/">
-    <meta property="twitter:title" content="Setting up a Zipline Server">
-    <meta property="twitter:description" content="Zipline is a high-performance ShareX/file-upload server used to share screenshots and store files online.">
+    <meta property="twitter:url" content="https://docs.danbot.host/vps/getting-started/">
+    <meta property="twitter:title" content="Getting Started - VPS">
+    <meta property="twitter:description" content="Work in progress.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -35,7 +35,6 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.819515432735" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.819515432735" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.11.0.819515432735" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -242,109 +241,13 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="setting-up-a-zipline-server" class="break-words">
+<doc-anchor-target id="getting-started---vps" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-a-zipline-server">#</doc-anchor-trigger>
-        <span>Setting up a Zipline Server</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-started---vps">#</doc-anchor-trigger>
+        <span>Getting Started - VPS</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://zipline.diced.sh/">Zipline</a> is a high-performance ShareX/file-upload server used to share screenshots and store files online.</p>
-<hr>
-<doc-anchor-target id="prerequisites">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
-        <span>Prerequisites</span>
-    </h2>
-</doc-anchor-target>
-<ul>
-<li>An <strong>All in One Server (AIO)</strong></li>
-<li>A <strong>Postgres 16</strong> Server</li>
-</ul>
-<hr>
-<doc-anchor-target id="1-installation">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-installation">#</doc-anchor-trigger>
-        <span>1. Installation</span>
-    </h2>
-</doc-anchor-target>
-<p>On your AIO server, execute the following commands in the terminal:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash"># Clone the repository
-git clone [https://github.com/diced/zipline](https://github.com/diced/zipline)
-cd zipline
-
-# Create a temporary directory for the installation
-mkdir /home/container/tmp &amp;&amp; export TMPDIR=/home/container/tmp
-
-# Install dependencies
-yarn install</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="2-configuration">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-configuration">#</doc-anchor-trigger>
-        <span>2. Configuration</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>In your file explorer, navigate to the <code v-pre>/zipline/</code> folder.</li>
-<li>Rename <code v-pre>env.local.example</code> to <code v-pre>env.local</code>.</li>
-<li>Open <code v-pre>env.local</code> and apply the following recommended settings:</li>
-</ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">CORE_RETURN_HTTPS=true # Set to false if you encounter SSL issues or use the default node domain.
-CORE_SECRET=&quot;&lt;random characters&gt;&quot;
-CORE_PORT=&lt;port of the aio server&gt;
-CORE_DATABASE_URL=&quot;postgres://pterodactyl:&lt;db_password&gt;@&lt;db_ip&gt;:&lt;db_port&gt;/zip10&quot;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="3-starting-the-server">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-starting-the-server">#</doc-anchor-trigger>
-        <span>3. Starting the Server</span>
-    </h2>
-</doc-anchor-target>
-<p>Run the following commands:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none"># This builds the modules so it loads faster when you visit the site.
-yarn build
-
-# This starts the production server and runs on the settings you configured before.
-yarn start</code></pre>
-</doc-codeblock></div>
-<p>The server should now start and you can go to the aio server&#x27;s IP + Port to log into to zipline. The default login is administrator/password. Once in the panel, click your username on the top right corner and select manage account. From here you can scroll down and generate the sharex config, which you can use to easily add this server to your client.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Make sure both servers are running when going through this process.</p>
-        </div>
-    </div>
-</div>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Thank you to raspi_dude (1005607106596057149) for creating this guide on the support channel.</p>
-        </div>
-    </div>
-</div>
+<p>Work in progress.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -354,20 +257,20 @@ yarn start</code></pre>
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../email-contacts/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../staff/staff-list/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Contact Emails</span>
+                                                <span class="block mt-1">Staff List</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../guides/uptimekuma/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../advanced/minecraft-server-proxy/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Installing Uptime Kuma</span>
+                                                <span class="block mt-1">How to Proxy a Minecraft Server</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -411,6 +314,6 @@ yarn start</code></pre>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Setting up a Zipline Server", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Getting Started - VPS", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
