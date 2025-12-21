@@ -4,7 +4,7 @@ icon: file
 
 # RedDiscordBot (RDB)
 
-Red discord bot is a multi-modular discord bot with a basic set of built-in commands. You can add more commands with cogs. It has over 550 available cogs, in addition to many default commands.
+Red Discord bot is a multi-modular Discord bot with a basic set of built-in commands. You can add more commands with cogs. It has over 550 available cogs, in addition to many default commands.
 
 ---
 
