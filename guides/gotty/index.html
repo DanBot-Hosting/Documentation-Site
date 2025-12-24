@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>How to Install NVM on AIO Eggs</title>
-    <meta name="title" content="How to Install NVM on AIO Eggs">
-    <meta name="description" content="Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.">
+    <title>How to Run Gotty on My Server?</title>
+    <meta name="title" content="How to Run Gotty on My Server?">
+    <meta name="description" content="GoTTY is a simple command line tool that turns your CLI tools into web applications.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.danbot.host/guides/nvm/">
+    <link rel="canonical" href="https://docs.danbot.host/guides/gotty/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.danbot.host/guides/nvm/">
-    <meta property="og:title" content="How to Install NVM on AIO Eggs">
-    <meta property="og:description" content="Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.">
+    <meta property="og:url" content="https://docs.danbot.host/guides/gotty/">
+    <meta property="og:title" content="How to Run Gotty on My Server?">
+    <meta property="og:description" content="GoTTY is a simple command line tool that turns your CLI tools into web applications.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.danbot.host/guides/nvm/">
-    <meta property="twitter:title" content="How to Install NVM on AIO Eggs">
-    <meta property="twitter:description" content="Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.">
+    <meta property="twitter:url" content="https://docs.danbot.host/guides/gotty/">
+    <meta property="twitter:title" content="How to Run Gotty on My Server?">
+    <meta property="twitter:description" content="GoTTY is a simple command line tool that turns your CLI tools into web applications.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -243,44 +243,52 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="how-to-install-nvm-on-aio-eggs" class="break-words">
+<doc-anchor-target id="how-to-run-gotty-on-my-server" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-install-nvm-on-aio-eggs">#</doc-anchor-trigger>
-        <span>How to Install NVM on AIO Eggs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-run-gotty-on-my-server">#</doc-anchor-trigger>
+        <span>How to Run Gotty on My Server?</span>
     </h1>
 </doc-anchor-target>
-<p>Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.</p>
-<doc-anchor-target id="installation-steps">
+<p>GoTTY is a simple command line tool that turns your CLI tools into web applications. This guide will show you how to install and run GoTTY on your server.</p>
+<doc-anchor-target id="installation-and-setup">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-steps">#</doc-anchor-trigger>
-        <span>Installation Steps</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-and-setup">#</doc-anchor-trigger>
+        <span>Installation and Setup</span>
     </h2>
 </doc-anchor-target>
-<p>Follow these steps to install NVM on your AIO egg:</p>
+<p>First, copy and run this command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash"># Get the latest release.
+curl -Lo gotty.tar.gz &quot;https://github.com/yudai/gotty/releases/download/v1.0.1/gotty_linux_amd64.tar.gz&quot;
+
+# Extract the files.
+tar -xvf gotty.tar.gz
+
+# Run.
+./gotty -w -c &quot;user:password&quot; -p &quot;INSERT_PORT_HERE&quot; bash</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="configuration-steps">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#configuration-steps">#</doc-anchor-trigger>
+        <span>Configuration Steps</span>
+    </h2>
+</doc-anchor-target>
 <ol>
-<li><p>Download the NVM installation script:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh</code></pre>
-</doc-codeblock></div>
-</li>
-<li><p>Create the <code v-pre>.bashrc</code> file:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">touch ~/.bashrc</code></pre>
-</doc-codeblock></div>
-</li>
-<li><p>Run the installation script:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">bash install.sh</code></pre>
-</doc-codeblock></div>
-</li>
-<li><p>Load the NVM configuration:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">source ~/.bashrc</code></pre>
-</doc-codeblock></div>
-</li>
-<li><p>Done! NVM is now installed and ready to use.</p>
-</li>
+<li>Go to your server, then paste the script and remove <code v-pre>`</code> if it is there.</li>
+<li>Add your user and password but don&#x27;t remove <code v-pre>:</code>, as this is needed.</li>
+<li>Add your port number which can be found on the main page of your server.</li>
+<li>Run it and enjoy!</li>
 </ol>
+<doc-anchor-target id="example">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example">#</doc-anchor-trigger>
+        <span>Example</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">./gotty -w -c &quot;myuser:mypassword&quot; -p &quot;8080&quot; bash</code></pre>
+</doc-codeblock></div>
+<p>This will start GoTTY on port 8080 with the username <code v-pre>myuser</code> and password <code v-pre>mypassword</code>.</p>
 <doc-anchor-target id="references">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#references">#</doc-anchor-trigger>
@@ -288,8 +296,8 @@
     </h2>
 </doc-anchor-target>
 <ul>
-<li><a href="https://computingforgeeks.com/how-to-install-node-js-on-ubuntu-debian/">How to Install Node.js on Ubuntu Debian</a></li>
-<li><a href="https://github.com/nvm-sh/nvm/blob/master/README.md">nvm-sh/nvm GitHub Repository</a></li>
+<li><a href="https://github.com/yudai/gotty">GoTTY GitHub Repository</a></li>
+<li><a href="https://github.com/yudai/gotty/releases">GoTTY Releases</a></li>
 </ul>
 
                                 
@@ -300,20 +308,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../guides/gotty/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../vps/getting-started/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Installing Gotty</span>
+                                                <span class="block mt-1">Getting Started - VPS</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../guides/zipline/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../guides/nvm/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Installing Zipline</span>
+                                                <span class="block mt-1">Installing NVM (Node Version Manager)</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -357,6 +365,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Installing NVM (Node Version Manager)", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Installing Gotty", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
