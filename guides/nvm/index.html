@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Installing Uptime Kuma</title>
-    <meta name="title" content="Installing Uptime Kuma">
-    <meta name="description" content="Uptime Kuma is a self-hosted monitoring tool. Follow the steps below to install it on your AIO server.">
+    <title>How to Install NVM on AIO Eggs</title>
+    <meta name="title" content="How to Install NVM on AIO Eggs">
+    <meta name="description" content="Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.danbot.host/guides/uptimekuma/">
+    <link rel="canonical" href="https://docs.danbot.host/guides/nvm/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.danbot.host/guides/uptimekuma/">
-    <meta property="og:title" content="Installing Uptime Kuma">
-    <meta property="og:description" content="Uptime Kuma is a self-hosted monitoring tool. Follow the steps below to install it on your AIO server.">
+    <meta property="og:url" content="https://docs.danbot.host/guides/nvm/">
+    <meta property="og:title" content="How to Install NVM on AIO Eggs">
+    <meta property="og:description" content="Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.danbot.host/guides/uptimekuma/">
-    <meta property="twitter:title" content="Installing Uptime Kuma">
-    <meta property="twitter:description" content="Uptime Kuma is a self-hosted monitoring tool. Follow the steps below to install it on your AIO server.">
+    <meta property="twitter:url" content="https://docs.danbot.host/guides/nvm/">
+    <meta property="twitter:title" content="How to Install NVM on AIO Eggs">
+    <meta property="twitter:description" content="Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -243,48 +243,54 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="installing-uptime-kuma" class="break-words">
+<doc-anchor-target id="how-to-install-nvm-on-aio-eggs" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installing-uptime-kuma">#</doc-anchor-trigger>
-        <span>Installing Uptime Kuma</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-install-nvm-on-aio-eggs">#</doc-anchor-trigger>
+        <span>How to Install NVM on AIO Eggs</span>
     </h1>
 </doc-anchor-target>
-<p>Uptime Kuma is a self-hosted monitoring tool. Follow the steps below to install it on your AIO server.</p>
-<hr>
-<doc-anchor-target id="requirements">
+<p>Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.</p>
+<doc-anchor-target id="installation-steps">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
-        <span>Requirements</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-steps">#</doc-anchor-trigger>
+        <span>Installation Steps</span>
+    </h2>
+</doc-anchor-target>
+<p>Follow these steps to install NVM on your AIO egg:</p>
+<ol>
+<li><p>Download the NVM installation script:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Create the <code v-pre>.bashrc</code> file:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">touch ~/.bashrc</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Run the installation script:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">bash install.sh</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Load the NVM configuration:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">source ~/.bashrc</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>Done! NVM is now installed and ready to use.</p>
+</li>
+</ol>
+<doc-anchor-target id="references">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#references">#</doc-anchor-trigger>
+        <span>References</span>
     </h2>
 </doc-anchor-target>
 <ul>
-<li>An <strong>AIO (All-In-One)</strong> server on DBH.</li>
+<li><a href="https://computingforgeeks.com/how-to-install-node-js-on-ubuntu-debian/">How to Install Node.js on Ubuntu Debian</a></li>
+<li><a href="https://github.com/nvm-sh/nvm/blob/master/README.md">nvm-sh/nvm GitHub Repository</a></li>
 </ul>
-<hr>
-<doc-anchor-target id="tutorial">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tutorial">#</doc-anchor-trigger>
-        <span>Tutorial</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="1-installation">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-installation">#</doc-anchor-trigger>
-        <span>1. Installation</span>
-    </h3>
-</doc-anchor-target>
-<p>Run the following commands in your server terminal to clone the repository and set up the environment:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">git clone [https://github.com/louislam/uptime-kuma.git](https://github.com/louislam/uptime-kuma.git)
-cd uptime-kuma
-npm run setup
-
-# Install PM2 to keep the process running
-npm install pm2 -g &amp;&amp; pm2 install pm2-logrotate
-
-# Start the application
-pm2 start server/server.js --name uptime-kuma</code></pre>
-</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -294,20 +300,20 @@ pm2 start server/server.js --name uptime-kuma</code></pre>
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../guides/zipline/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../vps/getting-started/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Setting up a Zipline Server</span>
+                                                <span class="block mt-1">Getting Started - VPS</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../advanced-guides/minecraft-server-proxy/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../guides/zipline/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">How to Proxy a Minecraft Server</span>
+                                                <span class="block mt-1">Setting up a Zipline Server</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -351,6 +357,6 @@ pm2 start server/server.js --name uptime-kuma</code></pre>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Installing Uptime Kuma", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Installing NVM (Node Version Manager)", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
