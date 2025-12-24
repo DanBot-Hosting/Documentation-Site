@@ -9,24 +9,24 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Node.js</title>
-    <meta name="title" content="Node.js">
-    <meta name="description" content="Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a...">
+    <title>Redis</title>
+    <meta name="title" content="Redis">
+    <meta name="description" content="Redis is a source-available, in-memory storage, used as a distributed, in-memory key–value database, cache, and message broker, with optional...">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.danbot.host/server-types/nodejs/">
+    <link rel="canonical" href="https://docs.danbot.host/server-types/redis/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.danbot.host/server-types/nodejs/">
-    <meta property="og:title" content="Node.js">
-    <meta property="og:description" content="Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a...">
+    <meta property="og:url" content="https://docs.danbot.host/server-types/redis/">
+    <meta property="og:title" content="Redis">
+    <meta property="og:description" content="Redis is a source-available, in-memory storage, used as a distributed, in-memory key–value database, cache, and message broker, with optional...">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.danbot.host/server-types/nodejs/">
-    <meta property="twitter:title" content="Node.js">
-    <meta property="twitter:description" content="Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a...">
+    <meta property="twitter:url" content="https://docs.danbot.host/server-types/redis/">
+    <meta property="twitter:title" content="Redis">
+    <meta property="twitter:description" content="Redis is a source-available, in-memory storage, used as a distributed, in-memory key–value database, cache, and message broker, with optional...">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -36,7 +36,6 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.819929532817" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.819929532817" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.11.0.819929532817" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -243,13 +242,13 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="nodejs" class="break-words">
+<doc-anchor-target id="redis" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#nodejs">#</doc-anchor-trigger>
-        <span>Node.js</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#redis">#</doc-anchor-trigger>
+        <span>Redis</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://nodejs.org">Node.js</a> is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.</p>
+<p><a href="https://redis.io/">Redis</a> is a source-available, in-memory storage, used as a distributed, in-memory key–value database, cache, and message broker, with optional durability. Because it holds all data in memory and because of its design, Redis offers low-latency reads and writes, making it particularly suitable for use cases that require a cache. Redis is the most popular NoSQL database, and one of the most popular databases overall.</p>
 <hr>
 <doc-anchor-target id="requirements">
     <h2>
@@ -258,93 +257,112 @@
     </h2>
 </doc-anchor-target>
 <ul>
-<li>Have an account created and linked to the panel. <a href="../../getting-started/">Click here if you have not done so already</a>.</li>
+<li>Have an account created and linked to the panel. <a href="../../getting-started/">Click here if you have not done so already.</a></li>
 </ul>
 <hr>
-<doc-anchor-target id="creating-a-server">
+<doc-anchor-target id="creating-the-server">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-a-server">#</doc-anchor-trigger>
-        <span>Creating a Server</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-the-server">#</doc-anchor-trigger>
+        <span>Creating the server</span>
     </h2>
 </doc-anchor-target>
-<p>To create a free server, go into <code v-pre>#⌛╏commands</code> and run <code v-pre>DBH!server create nodejs [optional server name]</code> to create a free server. Once you have done so, the bot should return the following output.</p>
+<p>To create a free server, go into <code v-pre>#⌛╏commands</code> and run <code v-pre>DBH!server create redis [optional server name]</code> to create a free server. Once you have done so, the bot should return the following output.</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-none"><code v-pre class="language-none">Server Successfully Created
 Click Here to Access Your Server
 Status:    User ID:    Type:
-Created    20613       nodejs
+Created    16464       redis
 Server Name:
 Untitled Server (settings -&gt; server name)</code></pre>
 </doc-codeblock></div>
-<p>If you are creating a donator server, instead run <code v-pre>DBH!server create-donator nodejs [optional server name]</code></p>
-<doc-anchor-target id="configuration">
+<p>If you are creating a donator server, instead run <code v-pre>DBH!server create-donator redis [optional server name]</code></p>
+<hr>
+<doc-anchor-target id="connecting-to-the-database">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configuration">#</doc-anchor-trigger>
-        <span>Configuration</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#connecting-to-the-database">#</doc-anchor-trigger>
+        <span>Connecting to the database</span>
     </h2>
 </doc-anchor-target>
-<hr>
-<doc-anchor-target id="1-creating-packagejson">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-creating-packagejson">#</doc-anchor-trigger>
-        <span>1. Creating package.json</span>
-    </h3>
-</doc-anchor-target>
-<hr>
-<p>If you are going to install dependencies onto the server, which you most likely will, we will show you 2 methods to create a package.json file. <strong>(If you already have a package.json file, skip this step)</strong></p>
-<doc-anchor-target id="manually-creating-the-file">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#manually-creating-the-file">#</doc-anchor-trigger>
-        <span>Manually creating the file</span>
-    </h3>
-</doc-anchor-target>
-<p>Log in to the <a href="https://panel.danbot.host/">panel</a>, go to your server, and then files. Once here, create a new file and put the following in it (replace the dependencies with the ones you are using)</p>
+<p>In order to connect to your database, start the server and use the following connection string:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-json"><code v-pre class="language-json">{
-  &quot;dependencies&quot;: {
-    &quot;dependency&quot;: &quot;1.0.0&quot;,
-    &quot;another-one&quot;: &quot;3.2.1&quot;
-  }
-}</code></pre>
+<pre translate="no" class="language-none"><code v-pre class="language-none">redis://default:&lt;PASSWORD&gt;@dono-XX.danbot.host:&lt;port&gt;</code></pre>
 </doc-codeblock></div>
-<p>Then save the file with the file name <code v-pre>package.json</code>.</p>
-<p>JSON formatting must be strictly followed! If you have issues installing any modules, consider validating your <code v-pre>package.json</code> file with a <a href="https://jsonformatter.curiousconcept.com/#">JSON formatter</a>.</p>
-<doc-anchor-target id="creating-the-file-via-npm-init">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-the-file-via-npm-init">#</doc-anchor-trigger>
-        <span>Creating the file via <code v-pre>npm init</code></span>
-    </h3>
-</doc-anchor-target>
-<p>Please make sure you have installed <a href="https://nodejs.org">node and npm</a> before doing this.</p>
-<p>Open up a command prompt/terminal, use <code v-pre>cd</code> to navigate to your project folder, and then run <code v-pre>npm init</code>. Once complete, fill out the info it asks for, or just press enter to use the text in the brackets. Once this is complete, you should have a package.json file.</p>
-<p>Now, log in to the <a href="https://panel.danbot.host/">panel</a>, go to your server, and then files. Once here, click on upload and upload your package.json file.</p>
-<p>If you want to add your dependencies to the file if you haven&#x27;t already, take a look at <doc-anchor-trigger to="#manually-creating-the-file">manually creating a file</doc-anchor-trigger>.</p>
 <hr>
-<doc-anchor-target id="2-uploading-or-creating-your-code-files">
+<doc-anchor-target id="fields">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#fields">#</doc-anchor-trigger>
+        <span>Fields</span>
+    </h2>
+</doc-anchor-target>
+<p>The given connection string above will not be enough to connect to the database. Now you need to modify it to be able to connect.</p>
+<doc-anchor-target id="node">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-uploading-or-creating-your-code-files">#</doc-anchor-trigger>
-        <span>2. Uploading or creating your code files</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#node">#</doc-anchor-trigger>
+        <span>Node</span>
     </h3>
 </doc-anchor-target>
+<p>Replace &quot;dono-XX.danbot.host&quot; with the server&#x27;s node. Below is a table with the node domains.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: left;">Free Node</th>
+<th style="text-align: left;">Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">PNode 1</td>
+<td style="text-align: left;">pnode1.danbot.host</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: left;">Dono Node</th>
+<th style="text-align: left;">Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dono 01</td>
+<td style="text-align: left;">dono-01.danbot.host</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dono 03</td>
+<td style="text-align: left;">dono-03.danbot.host</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="password">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#password">#</doc-anchor-trigger>
+        <span>Password</span>
+    </h3>
+</doc-anchor-target>
+<p>Your server&#x27;s password can be found in the startup tab under the variable <code v-pre>Redis Password</code>.</p>
+<doc-anchor-target id="port">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#port">#</doc-anchor-trigger>
+        <span>Port</span>
+    </h3>
+</doc-anchor-target>
+<p>You must use your server&#x27;s assigned port found on the main page after the node domain. Example: <code v-pre>dono-03.danbot.host:1234</code></p>
 <hr>
-<p>If you plan to use a port for a website or API, please make sure to get the right port from your server console, looking for something like <code v-pre>dono-XX.danbot.host:PORT</code>.</p>
-<doc-anchor-target id="create-from-scratch">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#create-from-scratch">#</doc-anchor-trigger>
-        <span>Create from scratch</span>
-    </h3>
+<doc-anchor-target id="final-result">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#final-result">#</doc-anchor-trigger>
+        <span>Final result</span>
+    </h2>
 </doc-anchor-target>
-<p>If you don&#x27;t have anything coded yet, and you want to code it by the way, go to the panel, your server, and then files. There you have three buttons: Create directory, Upload, and New File. Click New File. There you can code your app.</p>
-<p>When you finish coding, name the file something like <code v-pre>index.js</code> and save it.</p>
-<p>Once you do that, you&#x27;re done and you can start your server.</p>
-<doc-anchor-target id="uploading-code-files">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#uploading-code-files">#</doc-anchor-trigger>
-        <span>Uploading Code Files</span>
-    </h3>
-</doc-anchor-target>
-<p>If you already made something and you want to upload it, you need to compress the file into a .zip or .tar.gz file, and then upload it. <strong>Make sure that you do not compress the <code v-pre>node_modules</code> file as it&#x27;s automatically installed when the server starts.</strong> When the file finishes uploading, click the 3 dots and click &quot;unarchive&quot;. <strong>Make sure your main file is in the root folder and named index.js unless you know how to use a custom file name.</strong></p>
-<p>If you just have a single file (e.g., index.js), you can just upload that without compressing anything.</p>
+<p>Once you have finished modifying the connection string, it should look like this:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">redis://default:th!s!snot-p-ssword@dono-03.danbot.host:1234</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -354,20 +372,20 @@ Untitled Server (settings -&gt; server name)</code></pre>
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/mongodb/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/rdb/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Mongo​DB</span>
+                                                <span class="block mt-1">Red​Discord​Bot (RDB)</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/postgres/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../staff/staff-list/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Postgre​SQL</span>
+                                                <span class="block mt-1">Staff List</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -411,6 +429,6 @@ Untitled Server (settings -&gt; server name)</code></pre>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Node.js", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Redis", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
