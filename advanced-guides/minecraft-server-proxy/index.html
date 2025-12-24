@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.819857899059">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.819858221915">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -21,21 +21,23 @@
     <meta property="og:url" content="https://docs.danbot.host/advanced-guides/minecraft-server-proxy/">
     <meta property="og:title" content="How to Proxy a Minecraft Server">
     <meta property="og:description" content="If you want to access your Minecraft server using a custom domain (e.g., play.yourdomain.com) without requiring users to type in a port number, you...">
+    <meta property="og:image" content="https://docs.danbot.host/media/minecraft-server-proxy-cloudflare.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.danbot.host/advanced-guides/minecraft-server-proxy/">
     <meta property="twitter:title" content="How to Proxy a Minecraft Server">
     <meta property="twitter:description" content="If you want to access your Minecraft server using a custom domain (e.g., play.yourdomain.com) without requiring users to type in a port number, you...">
+    <meta property="twitter:image" content="https://docs.danbot.host/media/minecraft-server-proxy-cloudflare.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../media/dbh-logo-circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.11.0.819857899059" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.819858221915" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.819857899059" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.819858221915" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.819857899059" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.819858221915" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -275,18 +277,77 @@
         <span>Record Details</span>
     </h3>
 </doc-anchor-target>
-<p>[!table-list]</p>
-<ul>
-<li><strong>Type:</strong> <code v-pre>SRV</code></li>
-<li><strong>Name:</strong> Your subdomain (e.g., <code v-pre>play</code> for <code v-pre>play.yourdomain.com</code>)</li>
-<li><strong>Service:</strong> <code v-pre>_minecraft</code></li>
-<li><strong>Protocol:</strong> See the tabs below (TCP vs UDP)</li>
-<li><strong>TTL:</strong> <code v-pre>Auto</code></li>
-<li><strong>Priority:</strong> <code v-pre>0</code></li>
-<li><strong>Weight:</strong> <code v-pre>0</code></li>
-<li><strong>Port:</strong> Your unique DBH server port</li>
-<li><strong>Target:</strong> The node address (e.g., <code v-pre>dono-02.danbot.host</code> or <code v-pre>dono-04.danbot.host</code>)</li>
-</ul>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: right;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: center;"><code v-pre>SRV</code></td>
+<td style="text-align: right;">The DNS record type</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Name</strong></td>
+<td style="text-align: center;">Your subdomain</td>
+<td style="text-align: right;">e.g., <code v-pre>play</code> for <code v-pre>play.yourdomain.com</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Service</strong></td>
+<td style="text-align: center;"><code v-pre>_minecraft</code></td>
+<td style="text-align: right;">The service identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Protocol</strong></td>
+<td style="text-align: center;">TCP or UDP</td>
+<td style="text-align: right;">See the tabs below (TCP vs UDP)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TTL</strong></td>
+<td style="text-align: center;"><code v-pre>Auto</code></td>
+<td style="text-align: right;">Time to live</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Priority</strong></td>
+<td style="text-align: center;"><code v-pre>0</code></td>
+<td style="text-align: right;">Priority value</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Weight</strong></td>
+<td style="text-align: center;"><code v-pre>0</code></td>
+<td style="text-align: right;">Weight value</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Port</strong></td>
+<td style="text-align: center;">Your server port</td>
+<td style="text-align: right;">Your unique DBH server port</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Target</strong></td>
+<td style="text-align: center;">Node address</td>
+<td style="text-align: right;">e.g., <code v-pre>dono-02.danbot.host</code> or <code v-pre>dono-04.danbot.host</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<doc-anchor-target id="example">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#example">#</doc-anchor-trigger>
+        <span>Example:</span>
+    </h3>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <img src="../../media/minecraft-server-proxy-cloudflare.png" alt="Example from Cloudflare" class="rounded-image-rounded border-image-border border-image-border-width" width="600" height="400" />
+    <figcaption class="caption">Example from Cloudflare</figcaption>
+</figure>
+</p>
+<hr>
 <doc-anchor-target id="protocol-requirements">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#protocol-requirements">#</doc-anchor-trigger>
