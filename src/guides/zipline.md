@@ -65,3 +65,7 @@ Make sure both servers are running when going through this process.
 !!!
 Thank you to raspi_dude (1005607106596057149) for creating this guide on the support channel.
 !!!
+
+!!!info Last Updated:
+December 24, 2025.
+!!!

@@ -56,3 +56,7 @@ FLUSH PRIVILEGES;
 - [MariaDB Official Documentation](https://mariadb.org/documentation/)
 - [WordPress Database Configuration](https://wordpress.org/support/article/creating-database-for-wordpress/)
 - [MariaDB User Management](https://mariadb.com/kb/en/create-user/)
+
+!!!info Last Updated:
+December 24, 2025.
+!!!

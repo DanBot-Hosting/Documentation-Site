@@ -46,3 +46,7 @@ This makes sense for intranets that have a `.host` domain as their intranet doma
 !!!info Info
 Do note that removing `.host` will result in all `.host` to be resolved by external DNS and not local. This may or may not break your DNS setup.
 !!!
+
+!!!info Last Updated:
+December 24, 2025.
+!!!

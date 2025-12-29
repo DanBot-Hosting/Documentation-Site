@@ -42,3 +42,7 @@ This will start GoTTY on port 8080 with the username `myuser` and password `mypa
 
 - [GoTTY GitHub Repository](https://github.com/yudai/gotty)
 - [GoTTY Releases](https://github.com/yudai/gotty/releases)
+
+!!!info Last Updated:
+December 24, 2025.
+!!!

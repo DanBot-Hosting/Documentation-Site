@@ -53,3 +53,8 @@ Bedrock Edition For Bedrock/Pocket Edition players, you must use the UDP protoco
 ```
 Protocol: UDP
 ```
+===
+
+!!!info Last Updated:
+December 24, 2025.
+!!!

@@ -38,3 +38,7 @@ Follow these steps to install NVM on your AIO egg:
 
 - [How to Install Node.js on Ubuntu Debian](https://computingforgeeks.com/how-to-install-node-js-on-ubuntu-debian/)
 - [nvm-sh/nvm GitHub Repository](https://github.com/nvm-sh/nvm/blob/master/README.md)
+
+!!!info Last Updated:
+December 24, 2025.
+!!!

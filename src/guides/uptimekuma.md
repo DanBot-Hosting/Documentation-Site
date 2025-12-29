@@ -32,3 +32,7 @@ npm install pm2 -g && pm2 install pm2-logrotate
 # Start the application
 pm2 start server/server.js --name uptime-kuma
 ```
+
+!!!info Last Updated:
+December 24, 2025.
+!!!
