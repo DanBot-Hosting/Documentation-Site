@@ -35,7 +35,7 @@ This project was originally made by a bunch of DBH members to let newbies know e
 
 Maintainers: [Jonfirexbox](https://github.com/kyro3400) & [DIBSTER](https://github.com/DEV-DIBSTER)
 
-Original Creator: [Domin](https://github.com/domin-mnd)
+Original Creator: [Domin](https://github.com/dominnya)
 
 !!!
 We're counted as a official source of knowledge. Please note that this documentation is still being worked on and things are still changing. Want to contribute to this project? Visit the documentation's [repository](https://github.com/DanBot-Hosting/Documentation-Site) for more information.
