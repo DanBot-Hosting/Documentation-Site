@@ -18,20 +18,11 @@ icon: file
 
 To create a free server, go into `#⌛╏commands` and run `DBH!server create aio [optional server name]` to create a free server. Once you have done so, the bot should return the following output.
 
-```
-Server Successfully Created
-Click Here to Access Your Server
-Status:    User ID:    Type:
-Created    16464       aio
-Server Name:
-Untitled Server (settings -> server name)
-```
-
 If you are creating a donator server, instead run `DBH!server create-donator aio [optional server name]` 
 
 ---
 
-## Console
+## Startup
 
 In the `Startup` tab, you might find out the startup command is `bash`. This lets you interact with unix-like OS commands, git, npm, py, java etc. up until you "launch" the server e.g., `node .`.
 
@@ -42,3 +33,7 @@ In the `Startup` tab, you might find out the startup command is `bash`. This let
 To make starting your code easier, you can change the startup command to `bash start.sh` if you have a start.sh file to start your code. If you are using something like nodejs on an AIO server, all you have to do is change the startup command to `node .`.
 
 Please note that if you do change the startup command from `bash`, you will lose the ability to run commands in the console.
+
+!!!info Last Updated:
+December 30, 2025.
+!!!

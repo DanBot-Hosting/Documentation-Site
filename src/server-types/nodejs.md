@@ -18,15 +18,6 @@ icon: file
 
 To create a free server, go into `#⌛╏commands` and run `DBH!server create nodejs [optional server name]` to create a free server. Once you have done so, the bot should return the following output.
 
-```
-Server Successfully Created
-Click Here to Access Your Server
-Status:    User ID:    Type:
-Created    20613       nodejs
-Server Name:
-Untitled Server (settings -> server name)
-```
-
 If you are creating a donator server, instead run `DBH!server create-donator nodejs [optional server name]` 
 
 ## Configuration
