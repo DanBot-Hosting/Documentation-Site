@@ -9,24 +9,26 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>InfluxDB</title>
-    <meta name="title" content="InfluxDB">
-    <meta name="description" content="InfluxDB is an open-source time series database (TSDB) developed by the company InfluxData.">
+    <title>Bun (JavaScript Runtime)</title>
+    <meta name="title" content="Bun (JavaScript Runtime)">
+    <meta name="description" content="Bun is a fast, incrementally adoptable all-in-one JavaScript, TypeScript & JSX toolkit. Use individual tools like bun test or bun install in Node.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.danbot.host/server-types/influxdb/">
+    <link rel="canonical" href="https://docs.danbot.host/server-types/bun/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.danbot.host/server-types/influxdb/">
-    <meta property="og:title" content="InfluxDB">
-    <meta property="og:description" content="InfluxDB is an open-source time series database (TSDB) developed by the company InfluxData.">
+    <meta property="og:url" content="https://docs.danbot.host/server-types/bun/">
+    <meta property="og:title" content="Bun (JavaScript Runtime)">
+    <meta property="og:description" content="Bun is a fast, incrementally adoptable all-in-one JavaScript, TypeScript & JSX toolkit. Use individual tools like bun test or bun install in Node.">
+    <meta property="og:image" content="https://docs.danbot.host/media/server-types/bun/startup.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.danbot.host/server-types/influxdb/">
-    <meta property="twitter:title" content="InfluxDB">
-    <meta property="twitter:description" content="InfluxDB is an open-source time series database (TSDB) developed by the company InfluxData.">
+    <meta property="twitter:url" content="https://docs.danbot.host/server-types/bun/">
+    <meta property="twitter:title" content="Bun (JavaScript Runtime)">
+    <meta property="twitter:description" content="Bun is a fast, incrementally adoptable all-in-one JavaScript, TypeScript & JSX toolkit. Use individual tools like bun test or bun install in Node.">
+    <meta property="twitter:image" content="https://docs.danbot.host/media/server-types/bun/startup.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -242,84 +244,81 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="influxdb" class="break-words">
+<doc-anchor-target id="bun-javascript-runtime" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#influxdb">#</doc-anchor-trigger>
-        <span>InfluxDB</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bun-javascript-runtime">#</doc-anchor-trigger>
+        <span>Bun (JavaScript Runtime)</span>
     </h1>
 </doc-anchor-target>
-<p><a href="https://www.influxdata.com/">InfluxDB</a> is an open-source time series database (TSDB) developed by the company InfluxData. It is used for storage and retrieval of time series data in fields such as operations monitoring, application metrics, Internet of Things sensor data, and real-time analytics. It also has support for processing data from Graphite.</p>
-<p><a href="https://en.wikipedia.org/wiki/InfluxDB">Source: Wikipedia</a></p>
+<p>Bun is a fast, incrementally adoptable all-in-one JavaScript, TypeScript &amp; JSX toolkit. Use individual tools like bun test or bun install in Node.js projects, or adopt the complete stack with a fast JavaScript runtime, bundler, test runner, and package manager built in. Bun aims for 100% Node.js compatibility.</p>
+<p><a href="https://en.wikipedia.org/wiki/Bun_(software)">Source: Wikipedia</a></p>
+<p><a href="https://bun.com/">Source: Bun Main Page</a></p>
+<hr>
+<doc-anchor-target id="requirements">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
+        <span>Requirements</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Have an Pterodactyl account created and linked to the panel. <a href="../../getting-started/">Click here if you have not done so already.</a></li>
+</ul>
+<hr>
 <doc-anchor-target id="creating-the-server">
-    <h1>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#creating-the-server">#</doc-anchor-trigger>
         <span>Creating the Server</span>
-    </h1>
-</doc-anchor-target>
-<p>To create a server, we suppose that you&#x27;ve already <a href="../../getting-started/">created and linked an account into the panel</a>.</p>
-<p>In that case, go to DBH server and run this command:</p>
-<p>For a free server:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">DBH!server create influxdb [optional server name]</code></pre>
-</doc-codeblock></div>
-<p>For a donator server:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">DBH!server create-donator influxdb [optional server name]</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="get-database-online">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#get-database-online">#</doc-anchor-trigger>
-        <span>Get Database Online</span>
-    </h1>
-</doc-anchor-target>
-<ol>
-<li>On the server InfluxDB is running on, visit the server address (ex: <a href="http://pnode1.danbot.host:1234">http://pnode1.danbot.host:1234</a>).</li>
-<li>Click Get Started</li>
-</ol>
-<doc-anchor-target id="set-up-your-initial-user">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#set-up-your-initial-user">#</doc-anchor-trigger>
-        <span>Set up your initial user</span>
     </h2>
 </doc-anchor-target>
-<ol>
-<li>Enter a Username for your initial user.</li>
-<li>Enter a Password and Confirm Password for your user.</li>
-<li>Enter your initial Organization Name.</li>
-<li>Enter your initial Bucket Name.</li>
-<li>Click Continue.</li>
-<li>Copy the provided operator API token and store it for safe keeping.</li>
-</ol>
-<p>And now you have everything setup!</p>
-<doc-anchor-target id="fields">
+<p>To create a free server, go into <code v-pre>#⌛╏commands</code> and run <code v-pre>DBH!server create bun [optional server name]</code> to create a free server. Once you have done so, the bot should return the following output.</p>
+<p>If you are creating a donator server, instead run: <code v-pre>DBH!server create-donator bun [optional server name]</code></p>
+<hr>
+<doc-anchor-target id="startup">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#fields">#</doc-anchor-trigger>
-        <span>Fields</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startup">#</doc-anchor-trigger>
+        <span>Startup</span>
     </h2>
 </doc-anchor-target>
-<p>The link given above isn&#x27;t enough for you to connect to the database, now you have to modify it to actually connect to the database.</p>
-<doc-anchor-target id="password">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#password">#</doc-anchor-trigger>
-        <span>Password</span>
-    </h3>
+<p>In the <code v-pre>Startup</code> tab, there are customizable sections.</p>
+<p><figure class="content-center">
+    <img src="../../media/server-types/bun/startup.png" alt="Bun Server Startup Section" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Bun Server Startup Section</figcaption>
+</figure>
+</p>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
+        <span>What are these configurations?</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>These sections will allow you to auto update from a git repository, change the docker image from Stable to Canary, install and uninstall packages, etc.</p>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="starting-the-server">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#starting-the-server">#</doc-anchor-trigger>
+        <span>Starting the Server</span>
+    </h2>
 </doc-anchor-target>
-<p>Your &quot;password&quot; is actually a API Token you should have created in the first step</p>
-<doc-anchor-target id="port">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#port">#</doc-anchor-trigger>
-        <span>Port</span>
-    </h3>
-</doc-anchor-target>
-<p>&quot;port&quot; is your server&#x27;s port that can be found in the main page.</p>
-<doc-anchor-target id="conclusion">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conclusion">#</doc-anchor-trigger>
-        <span>Conclusion</span>
-    </h1>
-</doc-anchor-target>
-<p>Now you can deal with NoSQL database. To find out more about InfluxDB visit their documentation website!</p>
-<p><a href="https://docs.influxdata.com/influxdb/v2/">InfluxDB Docs</a></p>
+<p>Go to your <code v-pre>Console</code> section and click start, and based on the configurations you made in <code v-pre>Startup</code>, the server will boot, and your application will start!</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Last Updated:</h5>
+<p>December 30, 2025.</p>
+        </div>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -329,20 +328,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/gitea/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/aio/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Gitea</span>
+                                                <span class="block mt-1">All In One (AIO)</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/maraidb/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/gitea/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Maria​DB</span>
+                                                <span class="block mt-1">Gitea</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -386,6 +385,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "InfluxDB", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Bun (JavaScript Runtime)", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>

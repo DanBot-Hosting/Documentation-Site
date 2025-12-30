@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.820357508735">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.820443841548">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -31,11 +31,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../media/dbh-logo-circle.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.11.0.820357508735" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.820443841548" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.820357508735" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.820443841548" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.820357508735" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.820443841548" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -267,20 +267,12 @@
     </h2>
 </doc-anchor-target>
 <p>To create a free server, go into <code v-pre>#⌛╏commands</code> and run <code v-pre>DBH!server create aio [optional server name]</code> to create a free server. Once you have done so, the bot should return the following output.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">Server Successfully Created
-Click Here to Access Your Server
-Status:    User ID:    Type:
-Created    16464       aio
-Server Name:
-Untitled Server (settings -&gt; server name)</code></pre>
-</doc-codeblock></div>
 <p>If you are creating a donator server, instead run <code v-pre>DBH!server create-donator aio [optional server name]</code></p>
 <hr>
-<doc-anchor-target id="console">
+<doc-anchor-target id="startup">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#console">#</doc-anchor-trigger>
-        <span>Console</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startup">#</doc-anchor-trigger>
+        <span>Startup</span>
     </h2>
 </doc-anchor-target>
 <p>In the <code v-pre>Startup</code> tab, you might find out the startup command is <code v-pre>bash</code>. This lets you interact with unix-like OS commands, git, npm, py, java etc. up until you &quot;launch&quot; the server e.g., <code v-pre>node .</code>.</p>
@@ -293,6 +285,24 @@ Untitled Server (settings -&gt; server name)</code></pre>
 </doc-anchor-target>
 <p>To make starting your code easier, you can change the startup command to <code v-pre>bash start.sh</code> if you have a start.sh file to start your code. If you are using something like nodejs on an AIO server, all you have to do is change the startup command to <code v-pre>node .</code>.</p>
 <p>Please note that if you do change the startup command from <code v-pre>bash</code>, you will lose the ability to run commands in the console.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Last Updated:</h5>
+<p>December 30, 2025.</p>
+        </div>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -312,10 +322,10 @@ Untitled Server (settings -&gt; server name)</code></pre>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/gitea/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/bun/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Gitea</span>
+                                                <span class="block mt-1">Bun (Java​Script Runtime)</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
