@@ -1,5 +1,6 @@
 ---
 icon: file
+order: 1000
 ---
 
 # All In One (AIO)
@@ -14,7 +15,7 @@ icon: file
 
 ---
 
-## Creating the server
+## Creating the Server
 
 To create a free server, go into `#⌛╏commands` and run `DBH!server create aio [optional server name]` to create a free server. Once you have done so, the bot should return the following output.
 
