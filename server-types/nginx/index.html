@@ -9,24 +9,26 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Setting up MariaDB Egg for WordPress</title>
-    <meta name="title" content="Setting up MariaDB Egg for WordPress">
-    <meta name="description" content="This guide will help you configure a MariaDB database for your WordPress installation.">
+    <title>Nginx</title>
+    <meta name="title" content="Nginx">
+    <meta name="description" content="NGINX is a high-performance, open-source web server, reverse proxy, load balancer, HTTP cache, and mail proxy used by millions of websites for its...">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.danbot.host/guides/mariadb-wordpress/">
+    <link rel="canonical" href="https://docs.danbot.host/server-types/nginx/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.danbot.host/guides/mariadb-wordpress/">
-    <meta property="og:title" content="Setting up MariaDB Egg for WordPress">
-    <meta property="og:description" content="This guide will help you configure a MariaDB database for your WordPress installation.">
+    <meta property="og:url" content="https://docs.danbot.host/server-types/nginx/">
+    <meta property="og:title" content="Nginx">
+    <meta property="og:description" content="NGINX is a high-performance, open-source web server, reverse proxy, load balancer, HTTP cache, and mail proxy used by millions of websites for its...">
+    <meta property="og:image" content="https://docs.danbot.host/media/server-types/nginx/startup.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.danbot.host/guides/mariadb-wordpress/">
-    <meta property="twitter:title" content="Setting up MariaDB Egg for WordPress">
-    <meta property="twitter:description" content="This guide will help you configure a MariaDB database for your WordPress installation.">
+    <meta property="twitter:url" content="https://docs.danbot.host/server-types/nginx/">
+    <meta property="twitter:title" content="Nginx">
+    <meta property="twitter:description" content="NGINX is a high-performance, open-source web server, reverse proxy, load balancer, HTTP cache, and mail proxy used by millions of websites for its...">
+    <meta property="twitter:image" content="https://docs.danbot.host/media/server-types/nginx/startup.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -36,7 +38,6 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.820459181655" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.820459181655" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.11.0.820459181655" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -243,84 +244,85 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="setting-up-mariadb-egg-for-wordpress" class="break-words">
+<doc-anchor-target id="nginx" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-mariadb-egg-for-wordpress">#</doc-anchor-trigger>
-        <span>Setting up MariaDB Egg for WordPress</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nginx">#</doc-anchor-trigger>
+        <span>Nginx</span>
     </h1>
 </doc-anchor-target>
-<p>This guide will help you configure a MariaDB database for your WordPress installation.</p>
-<doc-anchor-target id="about-the-technologies">
+<p>NGINX is a high-performance, open-source web server, reverse proxy, load balancer, HTTP cache, and mail proxy used by millions of websites for its efficiency in handling traffic, serving static content, and managing complex application delivery. Originally created by Igor Sysoev in 2004, it&#x27;s known for its low resource usage and stability.</p>
+<p><a href="https://en.wikipedia.org/wiki/Nginx">Source: Wikipedia</a></p>
+<p><a href="https://nginx.org/">Source: Nginx Organization</a></p>
+<doc-anchor-target id="information">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#information">#</doc-anchor-trigger>
+        <span>Information</span>
+    </h1>
+</doc-anchor-target>
+<p>This Pterodactyl egg runs on a custom nginx docker image that was developed by DanBot Hosting. You can find the source code here:</p>
+<p><a href="https://github.com/DanBot-Hosting/pterodactyl-eggs">DanBot Hosting GitHub - Pterodactyl Eggs</a></p>
+<hr>
+<doc-anchor-target id="requirements">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#about-the-technologies">#</doc-anchor-trigger>
-        <span>About the Technologies</span>
-    </h2>
-</doc-anchor-target>
-<p><strong>WordPress</strong> is a free and open-source content management system (CMS) written in PHP. It&#x27;s one of the most popular website creation tools, powering over 40% of all websites on the internet.</p>
-<p><strong>MariaDB</strong> is a community-developed, commercially supported fork of the MySQL relational database management system. It&#x27;s designed to be highly compatible with MySQL while offering additional features and improved performance.</p>
-<doc-anchor-target id="database-setup-commands">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#database-setup-commands">#</doc-anchor-trigger>
-        <span>Database Setup Commands</span>
-    </h2>
-</doc-anchor-target>
-<p>Run the following SQL commands in your MariaDB console to set up the database for WordPress:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-sql"><code v-pre class="language-sql">CREATE DATABASE wordpress;
-
-CREATE USER &quot;your_username&quot;@&quot;your_allowed_ipaddr&quot; IDENTIFIED BY &quot;your_password&quot;;
-
-GRANT ALL PRIVILEGES ON wordpress.* TO &quot;your_username&quot;@&quot;your_allowed_ipaddr&quot;;
-
-FLUSH PRIVILEGES;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="configuration-notes">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#configuration-notes">#</doc-anchor-trigger>
-        <span>Configuration Notes</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="port-configuration">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#port-configuration">#</doc-anchor-trigger>
-        <span>Port Configuration</span>
-    </h3>
-</doc-anchor-target>
-<p>Make sure to change your <code v-pre>port</code> in <code v-pre>.my.cnf</code> to your server port, including the double ticks when executing the command.</p>
-<doc-anchor-target id="ip-address-configuration">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ip-address-configuration">#</doc-anchor-trigger>
-        <span>IP Address Configuration</span>
-    </h3>
-</doc-anchor-target>
-<p>Please note that <code v-pre>your_allowed_ipaddr</code> is the IP of the node that your WordPress is hosted on. If it&#x27;s on the same node, use Docker local IP <code v-pre>172.17.0.1</code>.</p>
-<doc-anchor-target id="example-configuration">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#example-configuration">#</doc-anchor-trigger>
-        <span>Example Configuration</span>
-    </h2>
-</doc-anchor-target>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-sql"><code v-pre class="language-sql">CREATE DATABASE wordpress;
-
-CREATE USER &quot;wpuser&quot;@&quot;172.17.0.1&quot; IDENTIFIED BY &quot;SecurePassword123&quot;;
-
-GRANT ALL PRIVILEGES ON wordpress.* TO &quot;wpuser&quot;@&quot;172.17.0.1&quot;;
-
-FLUSH PRIVILEGES;</code></pre>
-</doc-codeblock></div>
-<doc-anchor-target id="references">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#references">#</doc-anchor-trigger>
-        <span>References</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#requirements">#</doc-anchor-trigger>
+        <span>Requirements</span>
     </h2>
 </doc-anchor-target>
 <ul>
-<li><a href="https://wordpress.org/">WordPress Official Website</a></li>
-<li><a href="https://mariadb.org/documentation/">MariaDB Official Documentation</a></li>
-<li><a href="https://wordpress.org/support/article/creating-database-for-wordpress/">WordPress Database Configuration</a></li>
-<li><a href="https://mariadb.com/kb/en/create-user/">MariaDB User Management</a></li>
+<li>Have a Pterodactyl account created and linked to the panel. <a href="../../getting-started/">Click here if you have not done so already.</a></li>
 </ul>
+<hr>
+<doc-anchor-target id="creating-the-server">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#creating-the-server">#</doc-anchor-trigger>
+        <span>Creating the Server</span>
+    </h2>
+</doc-anchor-target>
+<p>To create a free server, go into <code v-pre>#⌛╏commands</code> and run <code v-pre>DBH!server create nginx [optional server name]</code> to create a free server. Once you have done so, the bot should return the following output.</p>
+<p>If you are creating a donator server, instead run: <code v-pre>DBH!server create-donator nginx [optional server name]</code></p>
+<hr>
+<doc-anchor-target id="startup">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#startup">#</doc-anchor-trigger>
+        <span>Startup</span>
+    </h2>
+</doc-anchor-target>
+<p>In the <code v-pre>Startup</code> tab, there is a customizable section.</p>
+<p><figure class="content-center">
+    <img src="../../media/server-types/nginx/startup.png" alt="Nginx Server Startup Section" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Nginx Server Startup Section</figcaption>
+</figure>
+</p>
+<div class="mb-6 overflow-hidden border rounded-md docs-columns dark:border-base-border" style="grid-template-columns: repeat(1, minmax(0, 1fr));">
+    <div class="flex items-center px-5 py-3 font-medium leading-snug text-gray-900 border-b border-base-border dark:text-white">
+        <span>What are these configurations?</span>
+    </div>
+    <div class="px-5 py-3 docs-columns-content">
+<p>The startup section will allow you to change how nginx starts up.</p>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="files">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#files">#</doc-anchor-trigger>
+        <span>Files</span>
+    </h2>
+</doc-anchor-target>
+<p>You&#x27;re files are located in the <code v-pre>/webroot/</code> directory. This is where you can upload custom PHP and other files and serve them directly. The default is a <code v-pre>index.php</code> that display Hello World!</p>
+<p><figure class="content-center">
+    <img src="../../media/server-types/nginx/folder-files.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<hr>
+<doc-anchor-target id="starting-the-server">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#starting-the-server">#</doc-anchor-trigger>
+        <span>Starting the Server</span>
+    </h2>
+</doc-anchor-target>
+<p>Go to your <code v-pre>Console</code> section and click start, and based on the configurations you made in <code v-pre>Startup</code>, the server will boot, and your application will start!</p>
+<p>Optionally you can use <code v-pre>bash</code> as your startup and directly type in console for testing, although this is not recommended.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -335,7 +337,7 @@ FLUSH PRIVILEGES;</code></pre>
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Last Updated:</h5>
-<p>December 24, 2025.</p>
+<p>December 30, 2025.</p>
         </div>
     </div>
 </div>
@@ -348,20 +350,20 @@ FLUSH PRIVILEGES;</code></pre>
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../guides/uptimekuma/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/python/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Installing Uptime Kuma</span>
+                                                <span class="block mt-1">Python</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../advanced-guides/minecraft-server-proxy/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/gitea/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">How to Proxy a Minecraft Server</span>
+                                                <span class="block mt-1">Gitea</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -405,6 +407,6 @@ FLUSH PRIVILEGES;</code></pre>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "MariaDB Setup for WordPress", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Nginx", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
