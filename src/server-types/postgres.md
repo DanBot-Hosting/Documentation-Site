@@ -98,7 +98,10 @@ You need to restart the server for this to take affect.
 
 ### Port
 
-You must use your server's assigned port found on the main page after the node domain. Example: `dono-03.danbot.host:1234`
+You must use your server's assigned port found on the Main Page also known as `console` page after the node domain. Example: `dono-03.danbot.host:1234`. The port would be `1234`.
+
+![Server Port Location](/media/server-types/port-location.png)
+
 
 ---
 
