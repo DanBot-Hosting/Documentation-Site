@@ -59,6 +59,8 @@ Go to your `Console` section and click start, and based on the configurations yo
 
 Optionally you can use `bash` as your startup and directly type in console for testing, although this is not recommended.
 
+---
+
 !!!info Last Updated:
 December 30, 2025.
 !!!

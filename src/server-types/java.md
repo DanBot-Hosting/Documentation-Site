@@ -46,6 +46,8 @@ The Pterodactyl egg may change overtime. Double check the documentation update d
 
 You can utilize the console but we always recommend changing the startup command and utilize that directly.
 
+---
+
 !!!info Last Updated:
 December 30, 2025.
 !!!

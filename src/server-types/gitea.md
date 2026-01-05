@@ -136,3 +136,9 @@ This is a very common error and may appear during installation. This is due to t
 ---
 
 Once it has installed, you should be brought to the main page of Gitea. Once you are here, you can safely reload the web page without issue.
+
+---
+
+!!!info Last Updated:
+December 27, 2025.
+!!!

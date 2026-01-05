@@ -59,3 +59,9 @@ Your "password" is actually a API Token you should have created in the first ste
 Now you can deal with NoSQL database. To find out more about InfluxDB visit their documentation website!
 
 [InfluxDB Docs](https://docs.influxdata.com/influxdb/v2/)
+
+---
+
+!!!info Last Updated:
+December 27, 2025.
+!!!

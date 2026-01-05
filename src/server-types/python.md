@@ -50,6 +50,8 @@ The Pterodactyl egg may change overtime. Double check the documentation update d
 
 Go to your `Console` section and click start, and based on the configurations you made in `Startup`, the server will boot, and your application will start!
 
+---
+
 !!!info Last Updated:
 December 30, 2025.
 !!!

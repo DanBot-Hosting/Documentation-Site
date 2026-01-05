@@ -78,6 +78,8 @@ If you already made something and you want to upload it, you need to compress th
 
 If you just have a single file (e.g., index.js), you can just upload that without compressing anything.
 
+---
+
 !!!info Last Updated:
 January 4, 2025.
 !!!

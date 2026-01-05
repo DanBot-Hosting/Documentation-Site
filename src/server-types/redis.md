@@ -74,3 +74,9 @@ Once you have finished modifying the connection string, it should look like this
 ```
 redis://default:th!s!snot-p-ssword@dono-03.danbot.host:1234
 ```
+
+---
+
+!!!info Last Updated:
+December 27, 2025.
+!!!

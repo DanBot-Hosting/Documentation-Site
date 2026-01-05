@@ -65,3 +65,9 @@ mongodb://admin:81OCNEWWJZ1KA0TJ@pnode2.danbot.host:9608/?authSource=admin
 Now you can deal with NoSQL database. To find out more about mongodb visit their documentation website!
 
 [MongoDB Docs](https://www.mongodb.com/docs/)
+
+---
+
+!!!info Last Updated:
+December 27, 2025.
+!!!

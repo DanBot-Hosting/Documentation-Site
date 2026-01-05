@@ -71,6 +71,8 @@ Example: `. --owner 569352110991343616`
 
 Example: `. --owner 569352110991343616 --dev`
 
+---
+
 !!!info Last Updated:
 December 30, 2025.
 !!!

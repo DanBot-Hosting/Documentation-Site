@@ -101,3 +101,9 @@ Please note: If you did miss a step this will not work!
 Now you can deal with MySQL database. To find out more about MariaDB visit their documentation website!
 
 [MariaDB Docs](https://mariadb.org/documentation/)
+
+---
+
+!!!info Last Updated:
+December 27, 2025.
+!!!

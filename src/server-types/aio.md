@@ -35,6 +35,8 @@ To make starting your code easier, you can change the startup command to `bash s
 
 Please note that if you do change the startup command from `bash`, you will lose the ability to run commands in the console.
 
+---
+
 !!!info Last Updated:
 December 30, 2025.
 !!!
