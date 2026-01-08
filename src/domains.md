@@ -22,7 +22,6 @@ Here is a list of all DanBot Hosting Domains:
 | `danbot.host` | Main Homepage | [!badge variant="success" text="Active"] |
 | `panel.danbot.host` | Pterodactyl Panel for Hosting | [!badge variant="success" text="Active"] |
 | `mail.danbot.host` | DanBot Hosting Mail Server | [!badge variant="success" text="Active"] |
-| `private.danbot.host` | Private Pterodactyl Panel | [!badge variant="success" text="Active"] |
 | `billing.danbot.host` | Paymenter Billing Panel | [!badge variant="success" text="Active"] |
 | `docs.danbot.host` | Retype Documentation Site (This Site) | [!badge variant="success" text="Active"] |
 | `service.danbot.host` | Hetrix Status Page | [!badge variant="success" text="Active"] |
