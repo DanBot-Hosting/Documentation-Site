@@ -25,7 +25,8 @@ The following are prohibited:
 - Nitro Generators or token grabbers.
 - Discord Terms of Service Violations.
 - Proxies.
+- Piracy Sites/Contents/Shares.
 
 !!!info Last Updated:
-January 10, 2025.
+January 11, 2025.
 !!!
