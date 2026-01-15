@@ -42,7 +42,7 @@ The link given above isn't enough for you to connect to the database, now you ha
 
 "password" can be found in the `Startup` tab.
 
-![Password example](/content/databases/postgres.png)
+![Password Location](/media/server-types/mongodb/password.png)
 
 !!!
 Given page screenshot is an example of the password, it does not carry any important information as the server was already deleted.
