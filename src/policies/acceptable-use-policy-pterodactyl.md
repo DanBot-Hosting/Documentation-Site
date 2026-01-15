@@ -26,7 +26,8 @@ The following are prohibited:
 - Discord Terms of Service Violations.
 - Proxies.
 - Piracy Sites/Contents/Shares.
+- Bitcoin Mining.
 
 !!!info Last Updated:
-January 11, 2025.
+January 15, 2025.
 !!!
