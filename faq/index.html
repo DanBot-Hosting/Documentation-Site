@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.821900106885">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.821900450014">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>DBH FAQ &amp; Guides</title>
-    <meta name="title" content="DBH FAQ & Guides">
+    <title>Frequently Asked Questions</title>
+    <meta name="title" content="Frequently Asked Questions">
     <meta name="description" content="How do I get donator servers? How do I donate? How do I get better servers?">
 
     <!-- Canonical -->
@@ -19,23 +19,23 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://docs.danbot.host/faq/">
-    <meta property="og:title" content="DBH FAQ & Guides">
+    <meta property="og:title" content="Frequently Asked Questions">
     <meta property="og:description" content="How do I get donator servers? How do I donate? How do I get better servers?">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://docs.danbot.host/faq/">
-    <meta property="twitter:title" content="DBH FAQ & Guides">
+    <meta property="twitter:title" content="Frequently Asked Questions">
     <meta property="twitter:description" content="How do I get donator servers? How do I donate? How do I get better servers?">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../media/dbh-logo-circle.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.11.0.821900106885" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.11.0.821900450014" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.821900106885" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.821900450014" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.821900106885" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.821900450014" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -263,7 +263,7 @@
 </li>
 <li><strong>What is the price of DBH VPN?</strong>
 <ul>
-<li>Free, with paid add-ons such as static IPs and premium locations (currently in beta).</li>
+<li>Free, with paid add-ons such as static IPs and premium locations (currently in development).</li>
 </ul>
 </li>
 </ul>
@@ -282,7 +282,7 @@
 <li><strong>Out-of-space errors when installing packages</strong>
 <ul>
 <li>Installs use a temp directory limited to 100MB on the host. Packages larger than that limit fail with out-of-space messages.</li>
-<li>For the container TMPDIR workaround, see: <a href="fixing-no-space-temp.md">Fixing <code v-pre>EnvironmentError - No space left on device</code></a>.</li>
+<li>For the container TMPDIR workaround, see: <a href="../advanced-guides/fixing-no-space-temp/">Fixing <code v-pre>EnvironmentError - No space left on device</code></a>.</li>
 </ul>
 </li>
 </ul>
@@ -298,13 +298,7 @@
 <li>Yes. Limit RAM to 2GB, or use the public instance: IP <code v-pre>63.141.232.244</code>, Port <code v-pre>1221</code>, Password <code v-pre>DBH</code>.</li>
 </ul>
 </li>
-<li><strong>What eggs currently have issues?</strong>
-<ul>
-<li>Broken eggs: N/A</li>
-<li>Outdated eggs: N/A</li>
-</ul>
-</li>
-<li><strong>Node IPs</strong>
+<li><strong>Node IPs?</strong>
 <ul>
 <li>Provided on request; check the panel or ask staff if you need specifics.</li>
 </ul>
@@ -319,7 +313,7 @@
 <li>Set the user agent to <code v-pre>DBH</code> when calling the API.</li>
 </ul>
 </li>
-<li><strong>Proxied domains not using HTTPS</strong>
+<li><strong>Proxied domains not using HTTPS:</strong>
 <ul>
 <li>Enable Force HTTPS by unproxying/reproxying or switching Cloudflare from DNS-only to Proxied (orange cloud), then in SSL enable &quot;Always HTTPS.&quot;</li>
 </ul>
@@ -334,7 +328,7 @@
 <ul>
 <li><strong>What are you not allowed to host?</strong>
 <ul>
-<li>See the full list here: <a href="https://docs.danbot.host/policies/policy-list/">https://docs.danbot.host/policies/policy-list/</a></li>
+<li>See the full list <a href="../policies/policy-list/">here</a>.</li>
 </ul>
 </li>
 <li><strong>What is the difference between Free Nodes and Donator Nodes?</strong>
@@ -364,7 +358,7 @@
 </li>
 <li><strong>What happens if you charge back via PayPal or your bank?</strong>
 <ul>
-<li>Immediate ban. Per ToS you may request a no-questions-asked refund within 14 days; after that, open a ticket for help.</li>
+<li>See Chargeback Policy (/policies/chargeback).</li>
 </ul>
 </li>
 </ul>
@@ -407,10 +401,24 @@
 <li>Maintenance: Node in maintenance; bot offline and panel access unavailable until it returns.</li>
 <li>Online: Node healthy and ready to use.</li>
 </ul>
-<blockquote>
-<p><strong>Last Updated:</strong><br />
-January 16, 2026.</p>
-</blockquote>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-info" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Last Updated:</h5>
+<p>January 16, 2026.</p>
+        </div>
+    </div>
+</div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -420,20 +428,20 @@ January 16, 2026.</p>
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../vps/locations/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../domains/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">VPS Locations</span>
+                                                <span class="block mt-1">Domains/Sites</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../guides/gotty/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../policies/policy-list/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Installing Gotty</span>
+                                                <span class="block mt-1">Policy List</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -477,6 +485,6 @@ January 16, 2026.</p>
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "DBH FAQ & Guides", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Frequently Asked Questions", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
