@@ -1,3 +1,9 @@
+---
+order: 5
+icon: checklist
+title: Frequently Asked Questions
+---
+
 # DBH FAQ & Guides
 
 ## Donations & Premium Servers
@@ -5,34 +11,31 @@
   - Donate at https://paypal.me/DanBotHosting (minimum $1, priced at `$0.50` per premium server).
   - Include your Discord ID in the notes. Open a ticket and provide a screenshot plus the transaction ID so staff can process it.
 - **What is the price of DBH VPN?**
-  - Free, with paid add-ons such as static IPs and premium locations (currently in beta).
+  - Free, with paid add-ons such as static IPs and premium locations (currently in development).
 
 ## Common Issues
 - **"No Space" error even with free disk**
   - Known issue from RAID setup on the new SSDs; being worked on.
 - **Out-of-space errors when installing packages**
   - Installs use a temp directory limited to 100MB on the host. Packages larger than that limit fail with out-of-space messages.
-  - For the container TMPDIR workaround, see: [Fixing `EnvironmentError - No space left on device`](fixing-no-space-temp.md).
+  - For the container TMPDIR workaround, see: [Fixing `EnvironmentError - No space left on device`](/advanced-guides/fixing-no-space-temp).
 
 ## Hosting Support
 - **Do you support Lavalink servers?**
   - Yes. Limit RAM to 2GB, or use the public instance: IP `63.141.232.244`, Port `1221`, Password `DBH`.
-- **What eggs currently have issues?**
-  - Broken eggs: N/A
-  - Outdated eggs: N/A
-- **Node IPs**
+- **Node IPs?**
   - Provided on request; check the panel or ask staff if you need specifics.
 - **What hosts do we use?**
   - Primarily Nocix and Hetzner, followed by Server.net and a few colocated VPS hosts.
 - **Having issues with the DBH Pterodactyl API?**
   - Set the user agent to `DBH` when calling the API.
-- **Proxied domains not using HTTPS**
+- **Proxied domains not using HTTPS:**
   - Enable Force HTTPS by unproxying/reproxying or switching Cloudflare from DNS-only to Proxied (orange cloud), then in SSL enable "Always HTTPS."
   
 
 ## Policies
 - **What are you not allowed to host?**
-  - See the full list here: https://docs.danbot.host/policies/policy-list/
+  - See the full list [here](/policies/policy-list).
 - **What is the difference between Free Nodes and Donator Nodes?**
   - Donator servers are paid and limited to donors or code claimers.
 - **What's the catch? Why is it free?**
@@ -44,7 +47,7 @@
 - **Why no RAM upgrades for Dono-02/Dono-04 servers?**
   - Max RAM was raised from 4GB to 6GB; further increases are not available due to limited resources.
 - **What happens if you charge back via PayPal or your bank?**
-  - Immediate ban. Per ToS you may request a no-questions-asked refund within 14 days; after that, open a ticket for help.
+  - See Chargeback Policy (/policies/chargeback).
 
 ## Databases
 - **Postgres**
@@ -62,5 +65,6 @@
 - Online: Node healthy and ready to use.
 
 
-> **Last Updated:**  
-> January 16, 2026.
+!!!info Last Updated:
+January 16, 2026.
+!!!
