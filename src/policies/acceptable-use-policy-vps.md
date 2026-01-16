@@ -16,11 +16,8 @@ If your unsure, ask before you host anything. Support tickets, and support email
 The following are prohibited:
 
 - DDoS Tools.
-- Scrapers.
-- Whatsapp Bots.
 - Nitro Generators or token grabbers.
 - Discord Terms of Service Violations.
-- Proxies.
 - Piracy Sites/Contents/Shares.
 - Bitcoin Mining.
 - Phishing Sites.
