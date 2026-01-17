@@ -24,7 +24,7 @@ You should provide as much information as possible. This includes:
 
 # When can I recieve a response?
 
-Emails are typically responsed to in 3-5 business days. You can bump your ticket if you have heard back a response in more then a week.
+Emails are typically responded to in **3-5 business days**. You can bump your ticket if you have heard back a response in more then a **week**.
 
 ---
 
