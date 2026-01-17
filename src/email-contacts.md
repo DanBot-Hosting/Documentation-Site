@@ -19,8 +19,8 @@ For faster support for **anything other then ban appeals**, we always recommend 
 | :--- | :--- | :--- |
 | **ASN & Dan Contact** | `dan@danbot.host` | [!badge variant="primary" text="Active"] |
 | **DIBSTER Contact** | `dibster@danbot.host` | [!badge variant="primary" text="Active"] |
-| **Donation Support** | `donate@danbot.host` | [!badge variant="warning" text="Delayed"] |
-| **General Support** | `support@danbot.host` | [!badge variant="warning" text="Phasing Out"] |
+| **Donation Support** | `donate@danbot.host` | [!badge variant="danger" text="No Longer in Use"] |
+| **General Support** | `support@danbot.host` | [!badge variant="danger" text="No Longer in Use"] |
 | **Abuse Report** | `abuse@danbot.host` | [!badge variant="primary" text="Active"] |
 | **Ban Appeals** | `appeals@danbot.host` | [!badge variant="primary" text="Active"] |
 
