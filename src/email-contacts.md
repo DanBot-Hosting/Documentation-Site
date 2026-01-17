@@ -18,15 +18,19 @@ If you need to reach us via email, please use the appropriate address below.
 | **Donation Support** | `donate@danbot.host` | [!badge variant="warning" text="Delayed"] |
 | **General Support** | `support@danbot.host` | [!badge variant="warning" text="Phasing Out"] |
 | **Abuse Report** | `abuse@danbot.host` | [!badge variant="primary" text="Active"] |
-| **Discord Ban Appeals** | `appeals@danbot.host` | [!badge variant="primary" text="Active"] |
+| **Ban Appeals** | `appeals@danbot.host` | [!badge variant="primary" text="Active"] |
 
 
 ---
 
 !!!
-For faster support, we always recommend going through the billing panel at https://billing.danbot.host, as opposed to emails.
+**If you are appealing a suspension or ban, use the ban appeals email.**
+!!!
+
+!!!
+For faster support for **everything else**, we always recommend going through the billing panel at https://billing.danbot.host, as opposed to emails.
 !!!
 
 !!!info Last Updated:
-December 23, 2025.
+January 17, 2026.
 !!!
