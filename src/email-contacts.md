@@ -28,7 +28,7 @@ For faster support for **anything other then ban appeals**, we always recommend 
 ---
 
 !!!
-**If you are appealing a suspension or ban, use the ban appeals email.**
+**If you are appealing a suspension or ban, use the ban appeals email. Guide for Appeals: [CLICK HERE](/appealing-a-ban)**
 !!!
 
 ---
