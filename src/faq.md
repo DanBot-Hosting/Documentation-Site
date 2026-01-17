@@ -26,7 +26,7 @@ title: Frequently Asked Questions
 - **Node IPs?**
   - Provided on request; check the panel or ask staff if you need specifics.
 - **What hosts do we use?**
-  - Primarily Nocix and Hetzner, followed by Server.net and a few colocated VPS hosts.
+  - Primarily CrunchBits and BerryByte, followed by OVHCloud and a few colocated VPS hosts.
 - **Having issues with the DBH Pterodactyl API?**
   - Set the user agent to `DBH` when calling the API.
 - **Proxied domains not using HTTPS:**
