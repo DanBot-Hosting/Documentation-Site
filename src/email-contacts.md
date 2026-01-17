@@ -9,6 +9,10 @@ If you need to reach us via email, please use the appropriate address below.
 
 ---
 
+!!!
+For faster support for **anything other then ban appeals**, we always recommend going through the billing panel at https://billing.danbot.host, as opposed to emails.
+!!!
+
 ## Email Directory
 
 | Purpose | Email Address | Status |
@@ -27,9 +31,7 @@ If you need to reach us via email, please use the appropriate address below.
 **If you are appealing a suspension or ban, use the ban appeals email.**
 !!!
 
-!!!
-For faster support for **everything else**, we always recommend going through the billing panel at https://billing.danbot.host, as opposed to emails.
-!!!
+---
 
 !!!info Last Updated:
 January 17, 2026.
