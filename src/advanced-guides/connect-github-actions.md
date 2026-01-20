@@ -1,3 +1,8 @@
+---
+name: Setting up GitHub Actions
+icon: book
+---
+
 # Connect GitHub to DBH (GitHub Actions)
 
 1. Create an AIO server: `DBH!server create aio server-name` (AIO has Python, Node.js, etc.).
