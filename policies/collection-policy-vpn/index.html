@@ -10,32 +10,26 @@
     <meta name="generator" content="Retype 4.4.0">
 
     <!-- Primary Meta Tags -->
-    <title>MongoDB</title>
-    <meta name="title" content="MongoDB">
-    <meta name="description" content="MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents">
+    <title>Collection Policy (VPN)</title>
+    <meta name="title" content="Collection Policy (VPN)">
+    <meta name="description" content="This policy explains what limited data we collect for VPN services and why.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://docs.danbot.host/server-types/mongodb/">
+    <link rel="canonical" href="https://docs.danbot.host/policies/collection-policy-vpn/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.danbot.host/server-types/mongodb/">
-    <meta property="og:title" content="MongoDB">
-    <meta property="og:description" content="MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents">
-    <meta property="og:image" content="https://docs.danbot.host/media/server-types/mongodb/password.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="MongoDB">
+    <meta property="og:url" content="https://docs.danbot.host/policies/collection-policy-vpn/">
+    <meta property="og:title" content="Collection Policy (VPN)">
+    <meta property="og:description" content="This policy explains what limited data we collect for VPN services and why.">
     <meta property="og:site_name" content="DanBot Hosting">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://docs.danbot.host/server-types/mongodb/">
-    <meta name="twitter:title" content="MongoDB">
-    <meta name="twitter:description" content="MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents">
-    <meta name="twitter:image" content="https://docs.danbot.host/media/server-types/mongodb/password.png">
-    <meta name="twitter:image:alt" content="MongoDB">
+    <meta name="twitter:url" content="https://docs.danbot.host/policies/collection-policy-vpn/">
+    <meta name="twitter:title" content="Collection Policy (VPN)">
+    <meta name="twitter:description" content="This policy explains what limited data we collect for VPN services and why.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -209,61 +203,31 @@
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <!-- Page content  -->
-<h1 id="mongodb">MongoDB</h1>
-<p><a href="https://www.mongodb.com/">MongoDB</a> is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL).</p>
-<p><a href="https://en.wikipedia.org/wiki/MongoDB">Source: Wikipedia</a></p>
-<h1 id="creating-the-server">Creating the server</h1>
-<p>To create a server, we suppose that you&#x27;ve already <a href="../../getting-started/">created and linked an account into the panel</a>.</p>
-<p>In that case, go to DBH server and run this command:</p>
-<p>For a free server:</p>
-<div id="creating-the-server-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">DBH!server create mongodb [optional server name]</code></pre>
-</doc-codeblock></div>
-<p>For a donator server:</p>
-<div id="creating-the-server-code-2" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">DBH!server create-donator mongodb [optional server name]</code></pre>
-</doc-codeblock></div>
-<h1 id="connect-to-the-database">Connect to the database</h1>
-<p>In order to connect to your fresh created database start the server and use the following link:</p>
-<div id="connect-to-the-database-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">mongodb://admin:password@nX.danbot.host:port/?authSource=admin</code></pre>
-</doc-codeblock></div>
-<h2 id="fields">Fields</h2>
-<p>The link given above isn&#x27;t enough for you to connect to the database, now you have to modify it to actually connect to the database.</p>
-<h3 id="password">Password</h3>
-<p>&quot;password&quot; can be found in the <code translate="no" v-pre>Startup</code> tab.</p>
-<figure class="content-center">
-    <img src="../../media/server-types/mongodb/password.png" alt="Password Location" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1920" height="911" />
-    <figcaption class="caption">Password Location</figcaption>
-</figure>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Given page screenshot is an example of the password, it does not carry any important information as the server was already deleted.</p>
-        </div>
-    </div>
-</div>
-<h3 id="port">Port</h3>
-<p>&quot;port&quot; is your server&#x27;s port that can be found in the main page.</p>
-<h2 id="final-result">Final result</h2>
-<p>As soon as you finished with the link it should look like this:</p>
-<div id="final-result-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">mongodb://admin:81OCNEWWJZ1KA0TJ@pnode2.danbot.host:9608/?authSource=admin</code></pre>
-</doc-codeblock></div>
-<h1 id="conclusion">Conclusion</h1>
-<p>Now you can deal with NoSQL database. To find out more about mongodb visit their documentation website!</p>
-<p><a href="https://www.mongodb.com/docs/">MongoDB Docs</a></p>
-<hr>
+<h1 id="collection-policy-vpn">Collection Policy (VPN)</h1>
+<p>This policy explains what limited data we collect for VPN services and why.</p>
+<h2 id="what-we-collect">What We Collect</h2>
+<ul>
+<li>Basic account details required to provide service (for example: account ID, email, and billing status).</li>
+<li>Operational and security metadata needed to run the VPN platform (for example: connection timestamps, total bandwidth usage, and abuse/security events).</li>
+<li>Support history when you contact us.</li>
+</ul>
+<h2 id="what-we-do-not-collect">What We Do Not Collect</h2>
+<ul>
+<li>We do not monitor or log the full contents of your traffic.</li>
+<li>We do not sell your VPN data to third parties.</li>
+</ul>
+<h2 id="why-we-collect-data">Why We Collect Data</h2>
+<ul>
+<li>To provide and maintain VPN access.</li>
+<li>To prevent abuse, fraud, and violations of our policies.</li>
+<li>To respond to valid legal requests.</li>
+</ul>
+<h2 id="data-access-and-retention">Data Access and Retention</h2>
+<ul>
+<li>Access is restricted to authorized staff who require it for operations, support, or security.</li>
+<li>Data is retained only as long as reasonably required for service delivery, legal obligations, billing, or abuse prevention.</li>
+</ul>
+<p>By using our VPN service, you agree to this collection policy.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-info"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -278,7 +242,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Last Updated:</h5>
-<p>December 27, 2025.</p>
+<p>March 25, 2026.</p>
         </div>
     </div>
 </div>
@@ -291,20 +255,20 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/maraidb/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../policies/chargeback/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Maria​DB</span>
+                                <span class="block mt-1">Chargeback Policy</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../server-types/postgres/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../policies/refund-policy/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">Postgre​SQL</span>
+                                <span class="block mt-1">Refund Policy</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>
@@ -348,6 +312,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "MongoDB", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Collection Policy (VPN)", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
