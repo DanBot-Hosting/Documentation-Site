@@ -1,7 +1,7 @@
 ---
 order: 100
 icon: pulse
-title: Policy List
+label: Policy List
 ---
 
 # List of Policies

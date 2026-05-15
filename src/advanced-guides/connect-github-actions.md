@@ -1,5 +1,5 @@
 ---
-name: Setting up GitHub Actions
+label: Setting up GitHub Actions
 icon: book
 ---
 

@@ -1,7 +1,7 @@
 ---
 order: 50
 icon: pulse
-title: Installing Uptime Kuma
+label: Installing Uptime Kuma
 ---
 
 # Installing Uptime Kuma

@@ -1,7 +1,7 @@
 ---
 order: 2
 icon: checklist
-title: Frequently Asked Questions
+label: Frequently Asked Questions
 ---
 
 # VPS Specific FAQs

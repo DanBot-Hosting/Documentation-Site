@@ -1,7 +1,7 @@
 ---
 order: 50
 icon: pulse
-title: Collection Policy (VPN)
+label: Collection Policy (VPN)
 ---
 
 # Collection Policy (VPN)

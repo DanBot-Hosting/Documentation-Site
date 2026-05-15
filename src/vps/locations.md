@@ -1,7 +1,7 @@
 ---
 order: 5
 icon: globe
-title: VPS Locations
+label: VPS Locations
 ---
 
 List of our current VPS locations and codenames for these locations. 
