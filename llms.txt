@@ -1,0 +1,69 @@
+﻿# Welcome to DanBot Hosting Docs!
+
+> Hello there! You seem to be troubled in creating servers, figuring out how DBH and their server types work, how to add custom domain etc. Well, DBH Docs is a way you can achieve this all.
+
+- [Welcome to DanBot Hosting Docs!](https://docs.danbot.host/index.md): Welcome to DanBot Hosting Docs!
+- [Getting Started](https://docs.danbot.host/getting-started.md): This guide provides a step-by-step tutorial on how to get started with DanBot Hosting (DBH) for Pterodactyl Services. These instructions are mirrored from the #📗╏getting-started channel in our Discord Server.
+- [Contact Emails](https://docs.danbot.host/email-contacts.md): If you need to reach us via email, please use the appropriate address below.
+- [Domains/Sites](https://docs.danbot.host/domains.md): Here is a list of all DanBot Hosting Domains:
+- [Frequently Asked Questions](https://docs.danbot.host/faq.md): List of common FAQ questions that have come up over the years.
+- [Appeals](https://docs.danbot.host/appealing-a-ban.md): All appeals are handled through appeals@danbot.host
+
+## Policies
+
+- [Policy List](https://docs.danbot.host/policies/policy-list.md): View all of DanBot Hosting policies, guidelines, and rules that govern how DanBot Hosting operates.
+- [Acceptable Use Policy (Pterodactyl)](https://docs.danbot.host/policies/acceptable-use-policy-pterodactyl.md): At DanBot Hosting, we try and let our users host a wide range of servers, so they get the best experience while using DBH. But we have to have limitations for a real, what are these limitations, read below.
+- [Acceptable Use Policy (VPN)](https://docs.danbot.host/policies/acceptable-use-policy-vpn.md): At DanBot Hosting, we provide VPN services for privacy, security, and reliable access. To keep the service stable, legal, and fair for everyone, all VPN usage must follow this policy.
+- [Acceptable Use Policy (VPS)](https://docs.danbot.host/policies/acceptable-use-policy-vps.md): At DanBot Hosting, we try and let our users host a wide range of services in our colocation and dedicated, so they get the best experience while using DBH. But we have to have limitations for a real, what are these limitations, read below.
+- [Chargeback Policy](https://docs.danbot.host/policies/chargeback.md): We do not allow chargebacks of any kind. If there is an issue, you must open a ticket and go through support for billing.
+- [Collection Policy (VPN)](https://docs.danbot.host/policies/collection-policy-vpn.md): This policy explains what limited data we collect for VPN services and why.
+- [Refund Policy](https://docs.danbot.host/policies/refund-policy.md): Within 14 days of purchase, you can request a refund, no questions asked (you don't have to, but feedback is always nice 😄).
+
+## Server Types
+
+- [All In One (AIO)](https://docs.danbot.host/server-types/aio.md): All In One is a unique server type that contains several features that distinguish it from other Development (Bot & Codeserver) server types. This type brings all of the other types into a single server type and lets users interact with console.
+- [Bun (JavaScript Runtime)](https://docs.danbot.host/server-types/bun.md): Bun is a fast, incrementally adoptable all-in-one JavaScript, TypeScript & JSX toolkit. Use individual tools like bun test or bun install in Node.js projects, or adopt the complete stack with a fast JavaScript runtime, bundler, test runner, and package manager built in.
+- [Java](https://docs.danbot.host/server-types/java.md): Java is a popular, high-level, object-oriented programming language and computing platform known for its "Write Once, Run Anywhere" (WORA) capability. It is currently owned by Oracle.
+- [Node.js](https://docs.danbot.host/server-types/nodejs.md): Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+- [Python](https://docs.danbot.host/server-types/python.md): Python is a high-level, general-purpose programming language that is easy to use and setup.
+- [Rust](https://docs.danbot.host/server-types/rust.md): Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety. It is designed for building reliable and efficient software.
+- [Nginx](https://docs.danbot.host/server-types/nginx.md): NGINX is a high-performance, open-source web server, reverse proxy, load balancer, HTTP cache, and mail proxy used by millions of websites for its efficiency in handling traffic, serving static content, and managing complex application delivery.
+- [Gitea](https://docs.danbot.host/server-types/gitea.md): Gitea is an open-source forge software package for hosting software development version control using Git as well as other collaborative features like bug tracking, wikis and code review.
+- [InfluxDB](https://docs.danbot.host/server-types/influxdb.md): InfluxDB is an open-source time series database (TSDB) developed by the company InfluxData. It is used for storage and retrieval of time series data in fields such as operations monitoring, application metrics, Internet of Things sensor data, and real-time analytics.
+- [MariaDB](https://docs.danbot.host/server-types/maraidb.md): MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system (RDBMS), intended to remain free and open-source software under the GNU General Public License.
+- [MongoDB](https://docs.danbot.host/server-types/mongodb.md): MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
+- [PostgreSQL](https://docs.danbot.host/server-types/postgres.md): PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.
+- [RedDiscordBot (RDB)](https://docs.danbot.host/server-types/rdb.md): Red Discord bot is a multi-modular Discord bot with a basic set of built-in commands. You can add more commands with cogs. It has over 550 available cogs, in addition to many default commands.
+- [Redis](https://docs.danbot.host/server-types/redis.md): Redis is a source-available, in-memory storage, used as a distributed, in-memory key–value database, cache, and message broker, with optional durability.
+- [Uptime Kuma](https://docs.danbot.host/server-types/uptimekuma.md): Uptime Kuma is a self-hosted monitoring tool used to check whether websites, servers, or services are online.
+
+## Staff
+
+- [Staff List](https://docs.danbot.host/staff/staff-list.md): The Team behind DanBot Hosting.
+
+## VPS
+
+- [Getting Started - VPS](https://docs.danbot.host/vps/getting-started.md): VPS Accounts are managed through our billing site for purchasing, and the operation controls done through VPS Site.
+- [VPS Locations](https://docs.danbot.host/vps/locations.md): List of our current VPS locations and codenames for these locations.
+- [Frequently Asked Questions](https://docs.danbot.host/vps/faq.md): List of common VPS FAQ questions that have come up over the years.
+
+## Guides
+
+- [How to Run Gotty on My Server?](https://docs.danbot.host/guides/gotty.md): GoTTY is a simple command line tool that turns your CLI tools into web applications. This guide will show you how to install and run GoTTY on your server.
+- [How to Install NVM on AIO Eggs](https://docs.danbot.host/guides/nvm.md): Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.
+- [Installing Zipline](https://docs.danbot.host/guides/zipline.md): Zipline is a high-performance ShareX/file-upload server used to share screenshots and store files online.
+- [Installing Uptime Kuma](https://docs.danbot.host/guides/uptimekuma.md): Uptime Kuma is a self-hosted monitoring tool. Follow the steps below to install it on your AIO server.
+- [No Space Error](https://docs.danbot.host/guides/fixing-no-space-temp.md): This increases your container's TEMP storage; it does not add more disk space.
+- [Hosting Playbooks](https://docs.danbot.host/guides/hosting-playbooks.md): List of different startup guides that you can use for Pterodactyl Servers.
+- [Proxy Guide](https://docs.danbot.host/guides/proxying-domains.md): This will have information regarding DanBot Hosting proxy services for domains.
+- [Setting up MariaDB Egg for WordPress](https://docs.danbot.host/guides/mariadb-wordpress.md): This guide will help you configure a MariaDB database for your WordPress installation.
+
+## Advanced Guides
+
+- [How to Proxy a Minecraft Server](https://docs.danbot.host/advanced-guides/minecraft-server-proxy.md): If you want to access your Minecraft server using a custom domain (e.g., play.yourdomain.com) without requiring users to type in a port number, you can do so using SRV Records.
+- [Connect GitHub to DBH (GitHub Actions)](https://docs.danbot.host/advanced-guides/connect-github-actions.md): Create an AIO server: DBH!server create aio server-name (AIO has Python, Node.js, etc.).
+
+## Misc
+
+- [What is Cloudflare WARP?](https://docs.danbot.host/misc/cloudflare-dns-warp-issues.md): Cloudflare WARP is a combined DNS and VPN service provided by Cloudflare to run through their network.
+- [ASN](https://docs.danbot.host/misc/asn.md): DanBot Hosting is a licensed ASN (214663) in the United Kingdom.

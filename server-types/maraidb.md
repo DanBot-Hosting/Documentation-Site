@@ -1,0 +1,105 @@
+# MariaDB
+
+[MariaDB](https://mariadb.org/) is a community-developed, commercially supported fork of the MySQL relational database management system (RDBMS), intended to remain free and open-source software under the GNU General Public License. Development is led by some of the original developers of MySQL, who forked it due to concerns over its acquisition by Oracle Corporation in 2009.
+
+[Source: Wikipedia](https://en.wikipedia.org/wiki/MariaDB)
+
+# Creating the server
+
+To create a server, we suppose that you've already [created and linked an account into the panel](/getting-started).
+
+In that case, go to DBH server and run this command:
+
+For a free server:
+
+```
+DBH!server create mariadb [optional server name]
+```
+
+For a donator server:
+
+```
+DBH!server create-donator mariadb [optional server name]
+```
+
+# Connect to the database
+
+In order to connect to your fresh created database start the server and use the following link:
+
+```text
+jdbc:mariadb://localhost:3306/DB?user=root&password=myPassword
+```
+
+## Fields
+
+The link given above isn't enough for you to connect to the database, now you have to modify it to actually connect to the database.
+
+### Create DB
+
+First you will need to run:
+
+```text
+CREATE DATABASE dbhDB;
+```
+
+in your servers console.
+
+### Create user and password
+
+Then we will run this next command:
+
+```text
+CREATE USER "DBHMariaDB"@"your_allowed_ipaddr" IDENTIFIED BY "Dbh!sTheBest!@";
+```
+
+!!!
+Please note: You **need** to use the nodes actual IP address, using the domain won't work
+
+Also: Please note that `your_allowed_ipaddr` is the IP of the node that your server is hosted on. If it's on a same node, use Docker local IP `172.17.0.1`
+!!!
+
+### Grand all privileges
+
+This is a very import step as this allows you to access the DB:
+
+```text
+GRANT ALL PRIVILEGES ON dbhDB.* TO "DBHMariaDB"@"88.99.138.239";
+```
+
+And last thing you need to run is:
+
+```text
+FLUSH PRIVILEGES;
+```
+
+### Port
+
+"port" is your server's port that can be found in the main page.
+
+!!!
+Make sure to change your `port` in `.my.cnf` to your server port, include the double ticks when executing the command.
+!!!
+
+## Final result
+
+As soon as you finished with the link it should look like this:
+
+```text
+jdbc:mariadb://pnode1.danbot.host:3306/DB?user=DBHMariaDB&password=Dbh!sTheBest!@
+```
+
+!!!
+Please note: If you did miss a step this will not work!
+!!!
+
+# Conclusion
+
+Now you can deal with MySQL database. To find out more about MariaDB visit their documentation website!
+
+[MariaDB Docs](https://mariadb.org/documentation/)
+
+---
+
+!!!info Last Updated:
+December 27, 2025.
+!!!
