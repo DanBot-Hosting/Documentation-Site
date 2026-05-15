@@ -1,7 +1,7 @@
 ---
 order: 50
 icon: pulse
-title: Acceptable Use Policy (VPS)
+label: Acceptable Use Policy (VPS)
 ---
 
 At DanBot Hosting, we try and let our users host a wide range of services in our colocation and dedicated, so they get the best experience while using DBH. But we have to have limitations for a real, what are these limitations, read below.

@@ -1,7 +1,7 @@
 ---
 order: 50
 icon: pulse
-title: Acceptable Use Policy (VPN)
+label: Acceptable Use Policy (VPN)
 ---
 
 At DanBot Hosting, we provide VPN services for privacy, security, and reliable access. To keep the service stable, legal, and fair for everyone, all VPN usage must follow this policy.

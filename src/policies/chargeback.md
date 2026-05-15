@@ -1,7 +1,7 @@
 ---
 order: 50
 icon: pulse
-title: Chargeback Policy
+label: Chargeback Policy
 ---
 
 # Chargeback Policy

@@ -1,7 +1,7 @@
 ---
 order: 1
 icon: globe
-title: Appeals
+label: Appeals
 ---
 
 # How to Appeal a Ban?

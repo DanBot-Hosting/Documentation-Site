@@ -1,7 +1,7 @@
 ---
 order: 50
 icon: pulse
-title: Acceptable Use Policy (Pterodactyl)
+label: Acceptable Use Policy (Pterodactyl)
 ---
 
 At DanBot Hosting, we try and let our users host a wide range of servers, so they get the best experience while using DBH. But we have to have limitations for a real, what are these limitations, read below.

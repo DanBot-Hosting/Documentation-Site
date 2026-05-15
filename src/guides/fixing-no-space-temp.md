@@ -1,6 +1,6 @@
 ---
 icon: server
-title: No Space Error
+label: No Space Error
 ---
 
 # Fixing `EnvironmentError - No space left on device`

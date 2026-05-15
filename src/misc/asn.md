@@ -1,5 +1,5 @@
 ---
-title: ASN
+label: ASN
 icon: globe
 order: 100
 ---

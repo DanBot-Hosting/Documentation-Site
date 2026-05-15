@@ -1,7 +1,7 @@
 ---
 order: 60
 icon: file-media
-title: Installing Zipline
+label: Installing Zipline
 ---
 
 # Setting up a Zipline Server
