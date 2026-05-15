@@ -11,6 +11,9 @@ branding:
 favicon: /media/dbh-logo-circle.png
 
 links:
+  - text: Website
+    link: https://danbot.host/
+    icon: globe
   - text: GitHub
     link: https://github.com/DanBot-Hosting
     icon: mark-github
