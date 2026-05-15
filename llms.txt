@@ -5,13 +5,13 @@
 - [Welcome to DanBot Hosting Docs!](https://docs.danbot.host/index.md): Welcome to DanBot Hosting Docs!
 - [Getting Started](https://docs.danbot.host/getting-started.md): This guide provides a step-by-step tutorial on how to get started with DanBot Hosting (DBH) for Pterodactyl Services. These instructions are mirrored from the #📗╏getting-started channel in our Discord Server.
 - [Contact Emails](https://docs.danbot.host/email-contacts.md): If you need to reach us via email, please use the appropriate address below.
-- [Domains/Sites](https://docs.danbot.host/domains.md): Here is a list of all DanBot Hosting Domains:
-- [Frequently Asked Questions](https://docs.danbot.host/faq.md): List of common FAQ questions that have come up over the years.
-- [Appeals](https://docs.danbot.host/appealing-a-ban.md): All appeals are handled through appeals@danbot.host
+- [DanBot Hosting Domains:](https://docs.danbot.host/domains.md): Here is a list of all DanBot Hosting Domains:
+- [DBH FAQ & Guides](https://docs.danbot.host/faq.md): List of common FAQ questions that have come up over the years.
+- [How to Appeal a Ban?](https://docs.danbot.host/appealing-a-ban.md): All appeals are handled through appeals@danbot.host
 
 ## Policies
 
-- [Policy List](https://docs.danbot.host/policies/policy-list.md): View all of DanBot Hosting policies, guidelines, and rules that govern how DanBot Hosting operates.
+- [List of Policies](https://docs.danbot.host/policies/policy-list.md): View all of DanBot Hosting policies, guidelines, and rules that govern how DanBot Hosting operates.
 - [Acceptable Use Policy (Pterodactyl)](https://docs.danbot.host/policies/acceptable-use-policy-pterodactyl.md): At DanBot Hosting, we try and let our users host a wide range of servers, so they get the best experience while using DBH. But we have to have limitations for a real, what are these limitations, read below.
 - [Acceptable Use Policy (VPN)](https://docs.danbot.host/policies/acceptable-use-policy-vpn.md): At DanBot Hosting, we provide VPN services for privacy, security, and reliable access. To keep the service stable, legal, and fair for everyone, all VPN usage must follow this policy.
 - [Acceptable Use Policy (VPS)](https://docs.danbot.host/policies/acceptable-use-policy-vps.md): At DanBot Hosting, we try and let our users host a wide range of services in our colocation and dedicated, so they get the best experience while using DBH. But we have to have limitations for a real, what are these limitations, read below.
@@ -45,16 +45,16 @@
 
 - [Getting Started - VPS](https://docs.danbot.host/vps/getting-started.md): VPS Accounts are managed through our billing site for purchasing, and the operation controls done through VPS Site.
 - [VPS Locations](https://docs.danbot.host/vps/locations.md): List of our current VPS locations and codenames for these locations.
-- [Frequently Asked Questions](https://docs.danbot.host/vps/faq.md): List of common VPS FAQ questions that have come up over the years.
+- [VPS Specific FAQs](https://docs.danbot.host/vps/faq.md): List of common VPS FAQ questions that have come up over the years.
 
 ## Guides
 
 - [How to Run Gotty on My Server?](https://docs.danbot.host/guides/gotty.md): GoTTY is a simple command line tool that turns your CLI tools into web applications. This guide will show you how to install and run GoTTY on your server.
 - [How to Install NVM on AIO Eggs](https://docs.danbot.host/guides/nvm.md): Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.
-- [Installing Zipline](https://docs.danbot.host/guides/zipline.md): Zipline is a high-performance ShareX/file-upload server used to share screenshots and store files online.
+- [Setting up a Zipline Server](https://docs.danbot.host/guides/zipline.md): Zipline is a high-performance ShareX/file-upload server used to share screenshots and store files online.
 - [Installing Uptime Kuma](https://docs.danbot.host/guides/uptimekuma.md): Uptime Kuma is a self-hosted monitoring tool. Follow the steps below to install it on your AIO server.
-- [No Space Error](https://docs.danbot.host/guides/fixing-no-space-temp.md): This increases your container's TEMP storage; it does not add more disk space.
 - [Hosting Playbooks](https://docs.danbot.host/guides/hosting-playbooks.md): List of different startup guides that you can use for Pterodactyl Servers.
+- [Fixing EnvironmentError - No space left on device](https://docs.danbot.host/guides/fixing-no-space-temp.md): This increases your container's TEMP storage; it does not add more disk space.
 - [Proxy Guide](https://docs.danbot.host/guides/proxying-domains.md): This will have information regarding DanBot Hosting proxy services for domains.
 - [Setting up MariaDB Egg for WordPress](https://docs.danbot.host/guides/mariadb-wordpress.md): This guide will help you configure a MariaDB database for your WordPress installation.
 

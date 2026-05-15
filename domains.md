@@ -1,4 +1,4 @@
-## DanBot Hosting Domains:
+# DanBot Hosting Domains:
 
 Here is a list of all DanBot Hosting Domains:
 
@@ -9,7 +9,7 @@ Here is a list of all DanBot Hosting Domains:
 | `danbot.dev` | Testing and development infrastructure. | [!badge variant="warning" text="Not for Public Use"] |
 | `only-fans.club` | Domain available to donators for sudomains. | [!badge variant="primary" text="Active"] |
 
-## List of Sites:
+# List of Sites:
 
 | Site | Purpose | Status |
 | :--- | :--- | :--- |
