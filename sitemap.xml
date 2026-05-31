@@ -2,178 +2,178 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.danbot.host/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/getting-started/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/faq/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/email-contacts/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/appealing-a-ban/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/domains/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/policies/policy-list/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/policies/chargeback/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/policies/acceptable-use-policy-vpn/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/policies/acceptable-use-policy-pterodactyl/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/policies/acceptable-use-policy-vps/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/policies/collection-policy-vpn/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/policies/refund-policy/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/aio/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/nodejs/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/bun/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/java/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/gitea/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/python/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/rust/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/nginx/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/postgres/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/influxdb/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/maraidb/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/mongodb/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/rdb/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/redis/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/server-types/uptimekuma/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/staff/staff-list/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/vps/getting-started/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/vps/locations/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/vps/faq/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/guides/gotty/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/guides/nvm/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/guides/fixing-no-space-temp/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/guides/zipline/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/guides/uptimekuma/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/guides/hosting-playbooks/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/guides/proxying-domains/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/guides/mariadb-wordpress/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/advanced-guides/minecraft-server-proxy/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/advanced-guides/connect-github-actions/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/misc/cloudflare-dns-warp-issues/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
   <url>
     <loc>https://docs.danbot.host/misc/asn/</loc>
-    <lastmod>2026-05-15T15:36:20Z</lastmod>
+    <lastmod>2026-05-31T18:46:51Z</lastmod>
   </url>
 </urlset>
