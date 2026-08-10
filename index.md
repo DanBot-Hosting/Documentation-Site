@@ -39,7 +39,7 @@ This project was originally made by a bunch of DBH members to let newbies know e
 
 ## Credit
 
-Maintainers: [Jonfirexbox](https://github.com/kyro3400) & [DIBSTER](https://github.com/DEV-DIBSTER)
+Maintainers: [DIBSTER](https://github.com/DEV-DIBSTER)
 
 Original Creator: [Domin](https://github.com/dominnya)
 
