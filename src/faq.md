@@ -13,7 +13,8 @@ List of common FAQ questions that have come up over the years.
 ## Donations & Premium Servers
 ### How do I get donator servers? How do I donate? How do I get better servers?
   - Donate at https://paypal.me/DanBotHosting (minimum $1, priced at `$0.50` per premium server).
-  - Include your Discord ID in the notes. Open a ticket and provide a screenshot plus the transaction ID so staff can process it.
+  - Include your Discord ID in the notes on the PayPal transaction.
+  - Open a ticket via our billing panel and include both a screenshot of the transaction, the transaction ID, and the Discord ID. This allows our automated systems setup the donation to be single click approved by our staff.
 ### What is the price of DBH VPN?
   - Free, with paid add-ons such as static IPs and premium locations (currently in development).
 
