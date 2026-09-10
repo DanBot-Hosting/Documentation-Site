@@ -49,6 +49,7 @@
 
 ## Guides
 
+- [How to Find My Server ID?](https://docs.danbot.host/guides/finding-server-id.md): Your Server ID is a unique identifier used to manage your server. This guide explains two ways to find it.
 - [How to Run Gotty on My Server?](https://docs.danbot.host/guides/gotty.md): GoTTY is a simple command line tool that turns your CLI tools into web applications. This guide will show you how to install and run GoTTY on your server.
 - [How to Install NVM on AIO Eggs](https://docs.danbot.host/guides/nvm.md): Node Version Manager (NVM) is a POSIX-compliant bash script to manage multiple active node.js versions.
 - [Setting up a Zipline Server](https://docs.danbot.host/guides/zipline.md): Zipline is a high-performance ShareX/file-upload server used to share screenshots and store files online.
