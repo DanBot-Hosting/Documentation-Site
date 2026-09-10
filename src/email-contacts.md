@@ -23,7 +23,7 @@ For faster support for **anything other then ban appeals**, we always recommend 
 | **ASN Contact** | `asn@danbot.host` | [!badge variant="primary" text="Active"] |
 | **Abuse Report** | `abuse@danbot.host` | [!badge variant="primary" text="Active"] |
 | **Ban Appeals** | `appeals@danbot.host` | [!badge variant="primary" text="Active"] |
-| **Support** | `support@danbot.host | [!badge variant="primary" text="Active"] |
+| **Support** | `support@danbot.host` | [!badge variant="primary" text="Active"] |
 
 ## Staff Email Directory
 
