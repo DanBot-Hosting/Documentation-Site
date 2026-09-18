@@ -4,11 +4,21 @@ List of common FAQ questions that have come up over the years.
 
 ---
 
+## Previous Nodes
+### Where did Dono-02 and Dono-04 go?
+  - They were migrated over to our new server, however we are still navigating the current climate regarding resources. We have no ETA on their return.
+### Where did Performance Node 1 (PNode-1) go?
+  - They were migrated over to our new server, however we are still navigating the current climate regarding resources. We have no ETA on their return. 
+
 ## Donations & Premium Servers
 ### How do I get donator servers? How do I donate? How do I get better servers?
   - Donate at https://paypal.me/DanBotHosting (minimum $1, priced at `$0.50` per premium server).
   - Include your Discord ID in the notes on the PayPal transaction.
   - Open a ticket via our billing panel and include both a screenshot of the transaction, the transaction ID, and the Discord ID. This allows our automated systems setup the donation to be single click approved by our staff.
+### How long does it take for my donation to be processed?
+  - It can take anywhere from 24 to 72 business hours to process from our systems. You must open a ticket to get such transactions processed. You can bump your ticket if it has exceed this time by sending a follow up message.
+### Can I exchange my donations for credits on billing site?
+  - Yes, you can. You must send proof of transaction that were made, as well as provide both Discord ID, Pterodactyl panel email, and billing panel email to process it via a ticket. It can go under Support / PayPal Transaction categories, and a staff member will process it once verified. This can take up to 72 business hours. You can bump your ticket if it has exceed this time by sending a follow up message.
 ### What is the price of DBH VPN?
   - Free, with paid add-ons such as static IPs and premium locations (currently in development).
 
