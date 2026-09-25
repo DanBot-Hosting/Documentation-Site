@@ -36,16 +36,16 @@ Make sure to change your `port` in `.my.cnf` to your server port, including the 
 
 ### IP Address Configuration
 
-Please note that `your_allowed_ipaddr` is the IP of the node that your WordPress is hosted on. If it's on the same node, use Docker local IP `172.17.0.1`.
+Please note that `your_allowed_ipaddr` is the IP of the node that your WordPress is hosted on. If it's on the same node, use the Pterodactyl Nodes Gateway IP `172.18.0.1`.
 
 ## Example Configuration
 
 ```sql
 CREATE DATABASE wordpress;
 
-CREATE USER "wpuser"@"172.17.0.1" IDENTIFIED BY "SecurePassword123";
+CREATE USER "wpuser"@"172.18.0.1" IDENTIFIED BY "SecurePassword123";
 
-GRANT ALL PRIVILEGES ON wordpress.* TO "wpuser"@"172.17.0.1";
+GRANT ALL PRIVILEGES ON wordpress.* TO "wpuser"@"172.18.0.1";
 
 FLUSH PRIVILEGES;
 ```

@@ -59,7 +59,7 @@ CREATE USER "DBHMariaDB"@"your_allowed_ipaddr" IDENTIFIED BY "Dbh!sTheBest!@";
 !!!
 Please note: You **need** to use the nodes actual IP address, using the domain won't work
 
-Also: Please note that `your_allowed_ipaddr` is the IP of the node that your server is hosted on. If it's on a same node, use Docker local IP `172.17.0.1`
+Also: Please note that `your_allowed_ipaddr` is the IP of the node that your server is hosted on. If it's on a same node, use the Pterodactyl Nodes Gateway IP `172.18.0.1`
 !!!
 
 ### Grand all privileges
