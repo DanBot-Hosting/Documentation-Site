@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.843322219332">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.843658715482">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../media/dbh-logo-circle.png" />
-    <link href="../resources/css/retype.css?v=4.6.0.843322219332" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.843658715482" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.843322219332" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.843658715482" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.843322219332" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.843658715482" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -276,6 +276,17 @@
 <pre translate="no" class="language-none"><code v-pre class="language-none">ping dono-01.danbot.host</code></pre>
 </doc-codeblock></div>
 <p>Where Node information can be found on the server settings or the server address on the main page.</p>
+<h3 id="what-is-the-internal-ip-for-the-pterodactyl-nodes-gateway">What is the internal IP for the Pterodactyl Nodes Gateway?</h3>
+<p>The internal gateway IP for Pterodactyl nodes is <code translate="no" v-pre>172.18.0.1</code>.</p>
+<p>This is the Docker network gateway used by Wings/Pterodactyl containers on each node. From inside a server container, traffic sent to <code translate="no" v-pre>172.18.0.1</code> reaches the host (the node), not the public internet.</p>
+<p><strong>Common use cases:</strong></p>
+<ul>
+<li>Connecting two of your servers on the <strong>same node</strong> (for example, an app to a MariaDB/Redis/Postgres server) without using the public node IP.</li>
+<li>Allowing a database user from same-node containers (e.g. <code translate="no" v-pre>CREATE USER &quot;user&quot;@&quot;172.18.0.1&quot;</code>), so only local containers can connect.</li>
+<li>Reaching a service that is published on the host/node from inside your container when <code translate="no" v-pre>localhost</code> only points at your own container.</li>
+<li>Lower-latency, same-node traffic that does not need to leave the node over the public network.</li>
+</ul>
+<p>If your servers are on <strong>different nodes</strong>, use the public node hostname/IP and port instead — <code translate="no" v-pre>172.18.0.1</code> only works for the local node gateway.</p>
 <h3 id="having-issues-with-the-dbh-pterodactyl-api">Having issues with the DBH Pterodactyl API?</h3>
 <p>Set the user agent to <code translate="no" v-pre>DBH</code> when calling the API.</p>
 <h3 id="proxied-domains-not-using-https">Proxied domains not using HTTPS:</h3>
@@ -347,7 +358,7 @@
         </div>
         <div class="pr-5 ml-3 w-full">
             <h5>Last Updated:</h5>
-<p>September 21, 2026.</p>
+<p>September 25, 2026.</p>
         </div>
     </div>
 </div>

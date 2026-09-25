@@ -60,6 +60,18 @@ Provided on request; check the panel or ask staff if you need specifics. We reco
   ```
 
   Where Node information can be found on the server settings or the server address on the main page.
+### What is the internal IP for the Pterodactyl Nodes Gateway?
+The internal gateway IP for Pterodactyl nodes is `172.18.0.1`.
+
+This is the Docker network gateway used by Wings/Pterodactyl containers on each node. From inside a server container, traffic sent to `172.18.0.1` reaches the host (the node), not the public internet.
+
+**Common use cases:**
+  - Connecting two of your servers on the **same node** (for example, an app to a MariaDB/Redis/Postgres server) without using the public node IP.
+  - Allowing a database user from same-node containers (e.g. `CREATE USER "user"@"172.18.0.1"`), so only local containers can connect.
+  - Reaching a service that is published on the host/node from inside your container when `localhost` only points at your own container.
+  - Lower-latency, same-node traffic that does not need to leave the node over the public network.
+
+If your servers are on **different nodes**, use the public node hostname/IP and port instead — `172.18.0.1` only works for the local node gateway.
 ### Having issues with the DBH Pterodactyl API?
 Set the user agent to `DBH` when calling the API.
 ### Proxied domains not using HTTPS:
@@ -134,5 +146,5 @@ Node healthy and ready to use.
 ---
 
 !!!info Last Updated:
-September 21, 2026.
+September 25, 2026.
 !!!
