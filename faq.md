@@ -31,14 +31,14 @@ They were migrated over to our new server, however we are still navigating the c
 Bank transfers are available using the following details:
 
 **UK**
-Account Number: `81399307`
-Sort code: `23-01-20`
-Name: `DanBot Hosting LTD`
+- Account Number: `81399307`
+- Sort code: `23-01-20`
+- Name: `DanBot Hosting LTD`
 
 **GLOBAL**
-IBAN: `GB92REVO23012081399307`
-BIC: `REVOGB21`
-Name: `DanBot Hosting LTD`
+- IBAN: `GB92REVO23012081399307`
+- BIC: `REVOGB21`
+- Name: `DanBot Hosting LTD`
 
 You must still provide proof of the transaction to validate your donation. Open a ticket and include the transaction ID and a screenshot of the transaction.
 ### How long does it take for my donation to be processed?
