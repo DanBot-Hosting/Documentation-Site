@@ -27,6 +27,20 @@ They were migrated over to our new server, however we are still navigating the c
   - Donate at https://paypal.me/DanBotHosting (minimum $1, priced at `$0.50` per premium server).
   - Include your Discord ID in the notes on the PayPal transaction.
   - Open a ticket via our billing panel and include both a screenshot of the transaction, the transaction ID, and the Discord ID. This allows our automated systems setup the donation to be single click approved by our staff.
+### How can I donate if I cannot use PayPal?
+Bank transfers are available using the following details:
+
+**UK**
+Account Number: `81399307`
+Sort code: `23-01-20`
+Name: `DanBot Hosting LTD`
+
+**GLOBAL**
+IBAN: `GB92REVO23012081399307`
+BIC: `REVOGB21`
+Name: `DanBot Hosting LTD`
+
+You must still provide proof of the transaction to validate your donation. Open a ticket and include the transaction ID and a screenshot of the transaction.
 ### How long does it take for my donation to be processed?
 It can take anywhere from 24 to 72 business hours to process from our systems. You must open a ticket to get such transactions processed. You can bump your ticket if it has exceed this time by sending a follow up message.
 ### Can I exchange my donations for credits on billing site?
