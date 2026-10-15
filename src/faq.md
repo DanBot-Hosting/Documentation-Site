@@ -31,8 +31,10 @@ They were migrated over to our new server, however we are still navigating the c
 ## Donations & Premium Servers
 ### How do I get donator servers? How do I donate? How do I get better servers?
   - Donate at https://paypal.me/DanBotHosting (minimum $1, priced at `$0.50` per premium server).
+  - Donations must be made in whole UK Pound increments. Partial amounts, such as 0.50 or 1.50 UK Pounds, are not accepted. Lower amounts will be rounded down.
+  - Donations must include the amount post transaction fees/costs.
   - Include your Discord ID in the notes on the PayPal transaction.
-  - Open a ticket via our billing panel and include both a screenshot of the transaction, the transaction ID, and the Discord ID. This allows our automated systems setup the donation to be single click approved by our staff.
+  - Open a ticket via our billing panel and include both a screenshot of the transaction, the transaction ID (in chat), and the Discord ID (in chat). This allows our automated systems setup the donation to be single click approved by our staff.
 ### How can I donate if I cannot use PayPal?
 Bank transfers are available using the following details:
 
@@ -167,5 +169,5 @@ Node healthy and ready to use.
 ---
 
 !!!info Last Updated:
-September 25, 2026.
+October 15, 2026.
 !!!
