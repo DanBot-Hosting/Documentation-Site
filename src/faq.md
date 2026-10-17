@@ -96,6 +96,16 @@ This is the Docker network gateway used by Wings/Pterodactyl containers on each 
 If your servers are on **different nodes**, use the public node hostname/IP and port instead — `172.18.0.1` only works for the local node gateway.
 ### Having issues with the DBH Pterodactyl API?
 Set the user agent to `DBH` when calling the API.
+### How do I reset my Pterodactyl Panel password?
+You can reset your password using either of these options:
+
+- Select **Reset Password** underneath the login boxes on the Pterodactyl Panel login page.
+- Run `DBH!user password` in the DBH Discord server.
+
+!!!note Password delivery:
+If you use the Discord command and have DMs enabled for the DBH server, the password will also be sent to you by DM if you cannot access it through email.
+!!!
+
 ### Proxied domains not using HTTPS:
 Enable Force HTTPS by unproxying/reproxying or switching Cloudflare from DNS-only to Proxied (orange cloud), then in SSL enable "Always HTTPS."
   
