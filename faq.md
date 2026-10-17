@@ -96,7 +96,7 @@ You can reset your password using either of these options:
 - Select **Reset Password** underneath the login boxes on the Pterodactyl Panel login page.
 - Run `DBH!user password` in the DBH Discord server.
 
-!!!note Password delivery:
+!!! Password delivery:
 If you use the Discord command and have DMs enabled for the DBH server, the password will also be sent to you by DM if you cannot access it through email.
 !!!
 
