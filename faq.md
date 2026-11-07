@@ -10,7 +10,7 @@ Support is available via our ticket system at [billing.danbot.host](https://bill
 ### How long does it take for a support ticket to be responded to?
 Depending on which category, a different staff member make take longer to respond due to the difficultly. Simple tickets should be processed within days, but response times will vary.
 ### Are suspension appeals handled via tickets?
-No, suspension appeals are not handled via tickets. They are handled via our appeals email (`appeals@danbot.host`). Pelase see the [appeals guide for more information](/appealing-a-ban).
+No, suspension appeals are not handled via tickets. They are handled via our appeals email (`appeals@danbot.host`). Please see the [appeals guide for more information](/appealing-a-ban).
 
 ---
 
