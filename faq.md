@@ -66,6 +66,8 @@ Known issue from RAID setup on the new SSDs; being worked on.
 ---
 
 ## Hosting Support
+### What is the UDP buffer size for quic-go on DBH Pterodactyl Nodes?
+The UDP buffer size for quic-go is now `7.5 MB`. If it is not set to this on a specific node, let an [administrator know via email](/email-contacts).
 ### Do you support Lavalink servers?
 Yes. Limit RAM to 2GB to prevent automated abuse detection systems from firing. Must be in good faith.
 ### Node IPs?
@@ -172,5 +174,5 @@ Node healthy and ready to use.
 ---
 
 !!!info Last Updated:
-October 15, 2026.
+November 25, 2026.
 !!!
